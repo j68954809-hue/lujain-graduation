@@ -337,22 +337,77 @@
       animation-delay: 5s;
       font-size: 0.9rem;
     }
+    /* =========================================================
+       EXTRA BUTTERFLIES
+    ========================================================= */
 
-    @keyframes butterflyFloat {
-      0%,
-      100% {
-        transform:
-          translate(0, 0)
-          rotate(-4deg);
-      }
-
-      50% {
-        transform:
-          translate(12px, -18px)
-          rotate(5deg);
-      }
+    /* فراشة عادية - يسار */
+    .extra-left {
+      top: 30%;
+      left: 10%;
+      animation-delay: 2s;
+      font-size: 1.1rem;
     }
 
+    /* فراشة متحركة أكثر - وسط */
+    .super-center {
+      top: 55%;
+      left: 50%;
+      font-size: 1.20rem;
+      opacity: 0.8;
+      z-index: 15;
+      animation: superButterflyFloat 60s ease-in-out infinite;
+    }
+
+            @keyframes superButterflyFloat {
+      0% {
+        transform: translateX(-50%) translate(0, 0) rotate(-8deg) scale(1);
+      }
+
+      8% {
+        transform: translateX(-50%) translate(40px, -45vh) rotate(15deg) scale(1.1);
+      }
+
+      16% {
+        transform: translateX(-50%) translate(-30px, -85vh) rotate(-12deg) scale(0.9);
+      }
+
+      24% {
+        transform: translateX(-50%) translate(-60px, -95vh) rotate(20deg) scale(1.15);
+      }
+
+      32% {
+        transform: translateX(-50%) translate(20px, -50vh) rotate(-15deg) scale(0.95);
+      }
+
+      42% {
+        transform: translateX(-50%) translate(50px, -10vh) rotate(12deg) scale(1.1);
+      }
+
+      52% {
+        transform: translateX(-50%) translate(-40px, 30vh) rotate(-18deg) scale(1.05);
+      }
+
+      62% {
+        transform: translateX(-50%) translate(-70px, 70vh) rotate(14deg) scale(0.9);
+      }
+
+      72% {
+        transform: translateX(-50%) translate(30px, 90vh) rotate(-10deg) scale(1.2);
+      }
+
+      82% {
+        transform: translateX(-50%) translate(60px, 95vh) rotate(16deg) scale(1);
+      }
+
+      92% {
+        transform: translateX(-50%) translate(-20px, 50vh) rotate(-14deg) scale(1.1);
+      }
+
+      100% {
+        transform: translateX(-50%) translate(0, 0) rotate(-8deg) scale(1);
+      }
+    }
 
     /* =========================================================
        HERO
@@ -2069,7 +2124,7 @@
 
   <div class="petals" id="petals"></div>
 
-  <div class="butterflies">
+    <div class="butterflies">
 
     <div class="butterfly">
       🦋
@@ -2080,6 +2135,16 @@
     </div>
 
     <div class="butterfly">
+      🦋
+    </div>
+
+    <!-- فراشة عادية - يسار -->
+    <div class="butterfly extra-left">
+      🦋
+    </div>
+
+    <!-- فراشة متحركة أكثر - وسط -->
+    <div class="butterfly super-center">
       🦋
     </div>
 
