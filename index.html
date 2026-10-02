@@ -2932,7 +2932,7 @@
       if (!sound) return;
 
       sound.currentTime = 0;
-      sound.volume = 0.25;
+      sound.volume = 1;
 
       sound
         .play()
@@ -2958,15 +2958,18 @@
     let musicPlaying = false;
 
 
-    async function startMusic() {
+        async function startMusic() {
 
       if (!audio) return;
 
       try {
 
+        audio.volume = 0.3;  // ← أضيفي هذا السطر (صوت الموسيقى)
+
         await audio.play();
 
         musicPlaying = true;
+
 
         if (musicButton) {
 
