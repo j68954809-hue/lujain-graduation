@@ -358,6 +358,21 @@
       z-index: 15;
       animation: superButterflyFloat 60s ease-in-out infinite;
     }
+    @keyframes butterflyFloat {
+      0%,
+      100% {
+        transform:
+          translate(0, 0)
+          rotate(-4deg);
+      }
+
+      50% {
+        transform:
+          translate(12px, -18px)
+          rotate(5deg);
+      }
+    }
+
 
             @keyframes superButterflyFloat {
       0% {
