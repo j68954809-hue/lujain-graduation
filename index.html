@@ -16,7 +16,7 @@
     property="og:description"
     content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية"
   >
-  <meta property="og:image" content="thumbnail.jpg">
+  <meta property="og:image" content="thumbnail.svg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
@@ -25,6 +25,7 @@
     property="twitter:description"
     content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029"
   >
+  <meta property="twitter:image" content="thumbnail.svg">
 
   <!-- Favicon -->
   <link
@@ -215,19 +216,132 @@
       font-size: 0.95rem;
       color: var(--brown-light);
     }
+/* =========================================================
+   LOADING MUSIC PROMPT
+========================================================= */
 
-    @keyframes loadingFloat {
-      0%,
-      100% {
-        transform: translateY(0) rotate(-3deg);
-      }
+.loading-music-prompt {
+  margin: 28px auto 0;
 
-      50% {
-        transform: translateY(-8px) rotate(3deg);
-      }
-    }
+  width: min(330px, 90vw);
+
+  padding: 16px 18px;
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius: 20px;
+
+  background:
+    rgba(255,250,246,0.94);
+
+  box-shadow:
+    0 15px 40px
+    rgba(109,81,75,0.13);
+
+  backdrop-filter:
+    blur(12px);
+
+  opacity: 0;
+
+  transform:
+    translateY(12px);
+
+  animation:
+    loadingMusicAppear
+    0.7s
+    ease
+    0.5s
+    forwards;
+}
 
 
+.loading-music-text {
+  font-size: 0.95rem;
+
+  color:
+    var(--brown);
+
+  margin-bottom: 12px;
+}
+
+
+.loading-music-actions {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 8px;
+}
+
+
+.loading-music-choice {
+  min-width: 85px;
+
+  padding:
+    8px 16px;
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius: 999px;
+
+  background:
+    #ffffff;
+
+  color:
+    var(--brown);
+
+  font-size:
+    0.85rem;
+
+  font-weight:
+    700;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.loading-music-choice:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 6px 15px
+    rgba(109,81,75,0.10);
+}
+
+
+.loading-music-choice.yes {
+  background:
+    var(--pink-2);
+
+  border-color:
+    var(--pink);
+}
+
+
+@keyframes loadingMusicAppear {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+
+}
     /* =========================================================
        BACKGROUND DECORATION
     ========================================================= */
@@ -559,6 +673,9 @@
 
     .name-cap {
       position: absolute;
+      z-index: 4;
+      pointer-events: none;
+      white-space: nowrap;
 
       top: -40px;
       right: -45px;
@@ -1494,7 +1611,47 @@
     }
 
     .footer-class strong {
-      font-weight: 700;
+      font-weight: 700 !important;
+      font-size: 1.4em;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+
+
+    /* =========================================================
+       BACK TO TOP
+    ======================================================== */
+
+    .back-to-top {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 500;
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: rgba(255,250,246,0.92);
+      color: var(--brown);
+      font-size: 1.2rem;
+      box-shadow: 0 10px 30px rgba(109,81,75,0.15);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-3px);
     }
 
 
@@ -1966,43 +2123,283 @@
 
 
     /* =========================================================
-       HERO REVEAL - الصفحة الأولى
-    ========================================================= */
+   HERO REVEAL - يبدأ بعد انتهاء الـLOADING
+========================================================= */
 
-    .hero .bismillah {
-      animation: heroReveal 0.8s ease 1.15s both;
+
+/* قبل انتهاء الـLoading: كل الأسطر مخفية */
+
+.hero-line {
+  opacity: 0;
+  transform: translateY(28px);
+  filter: blur(3px);
+}
+
+
+/* الظرف أيضًا مخفي */
+
+.hero-envelope {
+  opacity: 0;
+  transform: translateY(35px);
+  filter: blur(3px);
+}
+
+
+/* =========================================================
+   يبدأ الظهور فقط بعد انتهاء الـLOADING
+========================================================= */
+
+.hero.hero-started .hero-line {
+  animation:
+    heroLineReveal
+    0.8s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    forwards;
+}
+
+
+/* =========================================================
+   ترتيب ظهور كل سطر
+========================================================= */
+
+
+/* 1 - البسملة */
+
+.hero.hero-started .hero-bismillah {
+  animation-delay: 0.15s;
+}
+
+
+/* 2 - يتشرف */
+
+.hero.hero-started .hero-honor {
+  animation-delay: 0.40s;
+}
+
+
+/* 3 - اسم الوالد */
+
+.hero.hero-started .hero-father-name {
+  animation-delay: 0.65s;
+}
+
+
+/* 4 - الدعوة */
+
+.hero.hero-started .hero-invitation-text {
+  animation-delay: 0.90s;
+}
+
+
+/* 5 - اسم لُجين */
+
+.hero.hero-started .hero-graduate {
+  animation-delay: 1.20s;
+}
+
+
+/* 6 - الجامعة */
+
+.hero.hero-started .university-main {
+  animation-delay: 1.50s;
+}
+
+
+/* 7 - الكلية */
+
+.hero.hero-started .university-secondary {
+  animation-delay: 1.75s;
+}
+
+
+/* 8 - التخصص */
+
+.hero.hero-started .major {
+  animation-delay: 2.00s;
+}
+
+
+/* 9 - JUST UNI | MLS */
+
+.hero.hero-started .uni-badge {
+  animation-delay: 2.25s;
+}
+
+
+/* 10 - شعار الجامعة */
+
+.hero.hero-started .just-logo {
+  animation:
+    heroLineReveal
+    0.8s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    2.50s
+    forwards;
+}
+
+
+/* 10 - العبارة */
+
+.hero.hero-started .quote {
+  animation-delay: 2.80s;
+}
+
+
+/* 11 - الظرف */
+
+.hero.hero-started .hero-envelope {
+  animation:
+    heroLineReveal
+    0.9s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    3.10s
+    forwards;
+}
+
+
+/* =========================================================
+   حركة الظهور
+========================================================= */
+
+@keyframes heroLineReveal {
+
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(3px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* =========================================================
+   HERO - المسافات والألوان النهائية
+========================================================= */
+
+/* كل سطر مستقل */
+
+.hero .hero-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================================
+   1 - البسملة
+========================================================= */
+
+.hero .hero-bismillah {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* =========================================================
+   2 - يتشرف
+========================================================= */
+
+.hero .hero-honor {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.hero .hero-father-name {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: var(--brown);
+  font-weight: 700;
+}
+
+/* =========================================================
+   3 - جملة الدعوة
+========================================================= */
+
+.hero .hero-invitation-text {
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+/* =========================================================
+   4 - اسم لُجين
+========================================================= */
+
+    .hero .hero-graduate {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
-    .hero .father-invitation {
-      animation: heroReveal 0.8s ease 1.45s both;
-    }
+.hero .hero-graduate .graduate-name {
+  color: var(--brown);
+  font-weight: 700;
+}
 
-    .hero .graduate-name-wrapper {
-      animation: heroReveal 0.9s ease 1.75s both;
-    }
+/* =========================================================
+   6 - الجامعة
+========================================================= */
 
-    .hero .university-info {
-      animation: heroReveal 0.9s ease 2.05s both;
-    }
+.hero .university-main {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
 
-    .hero .quote {
-      animation: heroReveal 0.8s ease 2.35s both;
-    }
+/* =========================================================
+   7 - الكلية
+========================================================= */
 
-    @keyframes heroReveal {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-        filter: blur(3px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-        filter: blur(0);
-      }
-    }
+.hero .university-secondary {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 
+/* =========================================================
+   8 - التخصص
+========================================================= */
 
+.hero .major {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* =========================================================
+   9 - JUST UNI | MLS
+========================================================= */
+
+.hero .uni-badge {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* =========================================================
+   10 - شعار الجامعة
+========================================================= */
+
+.hero .just-logo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* =========================================================
+   11 - العبارة
+========================================================= */
+
+.hero .quote {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+/* =========================================================
+   12 - الظرف
+========================================================= */
+
+.hero .hero-envelope {
+  margin-top: 0;
+}
+    
     /* =========================================================
        RESPONSIVE
     ========================================================= */
@@ -2052,9 +2449,9 @@
       }
 
       .name-cap {
-        font-size: 1.3rem;
-        right: -23px;
-        top: -28px;
+        font-size: 1.35rem;
+        right: -25px;
+        top: -30px;
       }
 
       .university-main {
@@ -2094,6 +2491,12 @@
 
       .music-button {
         bottom: 18px;
+        left: 18px;
+      }
+
+      .back-to-top {
+        right: 18px;
+        bottom: 18px;
       }
     }
 
@@ -2131,27 +2534,56 @@
 
   <div class="loading-screen" id="loadingScreen">
 
-    <div class="loading-content">
+  <div class="loading-content">
 
-      <div class="loading-cap">
-        🎓
+    <div class="loading-cap">
+      🎓
+    </div>
+
+    <div class="loading-name">
+      Lujain
+    </div>
+
+    <div class="loading-line"></div>
+
+    <div class="loading-text">
+      لحظة جميلة تستحق الانتظار...
+    </div>
+
+
+    <!-- MUSIC PROMPT -->
+
+    <div class="loading-music-prompt" id="loadingMusicPrompt">
+
+      <div class="loading-music-text">
+        🎵 أتحب إضافة موسيقى للجو؟
       </div>
 
-      <div class="loading-name">
-        Lujain
-      </div>
+      <div class="loading-music-actions">
 
-      <div class="loading-line"></div>
+        <button
+          class="loading-music-choice yes"
+          id="loadingMusicYes"
+          type="button"
+        >
+          نعم 🎵
+        </button>
 
-      <div class="loading-text">
-        لحظة جميلة تستحق الانتظار...
+        <button
+          class="loading-music-choice"
+          id="loadingMusicNo"
+          type="button"
+        >
+          لا
+        </button>
+
       </div>
 
     </div>
 
   </div>
 
-
+</div>
   <!-- =======================================================
        BACKGROUND DECORATION
   ======================================================== -->
@@ -2189,121 +2621,139 @@
 
 
   <!-- =======================================================
-       HERO
-  ======================================================== -->
+     HERO - الصفحة الأولى
+======================================================== -->
 
-  <header class="hero">
+<header class="hero">
 
-    <div class="hero-inner">
+  <div class="hero-inner">
 
-      <div class="bismillah">
-        بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
+
+    <!-- السطر 1: البسملة -->
+
+    <div class="hero-line hero-bismillah">
+      بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
+    </div>
+
+
+    <!-- السطر 2: يتشرف -->
+
+    <div class="hero-line hero-honor">
+      يتشرف
+    </div>
+
+
+    <!-- السطر 3: اسم الوالد -->
+
+    <div class="hero-line hero-father-name">
+      سلامة فليح الخوالدة (أبو نشأت)
+    </div>
+
+
+    <!-- السطر 4: الدعوة -->
+
+    <div class="hero-line hero-invitation-text">
+      بدعوتكم لمشاركة فرحة تخرج ابنته
+    </div>
+
+
+    <!-- السطر 5: اسم الخريجة -->
+
+    <div class="graduate-name-wrapper hero-line hero-graduate">
+
+      <div class="graduate-name">
+        لُــجــيــن
       </div>
 
-
-      <div class="father-invitation">
-
-        يتشرف
-
-        <span class="father-name">
-          سلامة فليح الخوالدة (أبو نشأت)
-        </span>
-
-        <br>
-
-        بدعوتكم لمشاركة فرحة تخرج ابنته
-
-      </div>
-
-
-      <!-- Graduate Name -->
-
-      <div class="graduate-name-wrapper">
-
-        <div class="graduate-name">
-          لُــجــيــن
-        </div>
-
-        <div class="name-cap">
-          🎓
-        </div>
-
-      </div>
-
-
-      <!-- University -->
-
-      <div class="university-info">
-
-        <div class="university-main">
-          من جامعة العلوم والتكنولوجيا الأردنية
-        </div>
-
-        <div class="university-secondary">
-          كلية العلوم الطبية التطبيقية
-        </div>
-
-        <div class="major">
-          تخصص العلوم الطبية المخبرية
-        </div>
-
-        <div class="uni-badge">
-          👩🏻‍🔬🔬 𝑱𝑼𝑺𝑻 𝑼𝑵𝑰 | 𝑴𝑳𝑺
-        </div>
-
-        <img
-          src="just-logo.png"
-          alt="JUST"
-          class="just-logo"
-        >
-
-      </div>
-
-
-      <!-- Quote -->
-
-      <div class="quote">
-        سَنَوَاتُ جَهْدٍ وَمُثَابَرَةٍ تُوِّجَتْ بِالتَّخَرُّجِ
-      </div>
-
-
-      <!-- Envelope -->
-
-      <div class="envelope-section">
-
-        <div class="envelope" id="envelope">
-
-          <div class="envelope-letter"></div>
-
-          <div class="envelope-fold-left"></div>
-
-          <div class="envelope-fold-right"></div>
-
-          <div class="envelope-flap"></div>
-
-          <div class="envelope-seal">
-            🦋
-          </div>
-
-          <button
-            class="open-invitation"
-            id="openInvitationButton"
-            onclick="openInvitation()"
-          >
-            اضغطوا لفتح الدعوة
-          </button>
-
-        </div>
-
-        <div class="envelope-hint">
-          افتحوا الظرف لتبدأ الحكاية ✨
-        </div>
-
+      <div class="name-cap">
+        🎓
       </div>
 
     </div>
 
-  </header>
+
+    <!-- السطر 6: الجامعة -->
+
+    <div class="hero-line university-main">
+      من جامعة العلوم والتكنولوجيا الأردنية
+    </div>
+
+
+    <!-- السطر 7: الكلية -->
+
+    <div class="hero-line university-secondary">
+      كلية العلوم الطبية التطبيقية
+    </div>
+
+
+    <!-- السطر 8: التخصص -->
+
+    <div class="hero-line major">
+      تخصص العلوم الطبية المخبرية
+    </div>
+
+
+    <!-- السطر 9: JUST UNI | MLS -->
+
+    <div class="hero-line uni-badge">
+      👩🏻‍🔬🔬 𝑱𝑼𝑺𝑻 𝑼𝑵𝑰 | 𝑴𝑳𝑺
+    </div>
+
+
+    <!-- السطر 10: شعار الجامعة -->
+
+    <img
+      src="just-logo.png"
+      alt="JUST"
+      class="just-logo hero-line"
+    >
+
+
+    <!-- السطر 11: العبارة -->
+
+    <div class="hero-line quote">
+      سَنَوَاتُ جَهْدٍ وَمُثَابَرَةٍ تُوِّجَتْ بِالتَّخَرُّجِ
+    </div>
+
+
+    <!-- الظرف -->
+
+    <div class="envelope-section hero-envelope">
+
+      <div class="envelope" id="envelope">
+
+        <div class="envelope-letter"></div>
+
+        <div class="envelope-fold-left"></div>
+
+        <div class="envelope-fold-right"></div>
+
+        <div class="envelope-flap"></div>
+
+        <div class="envelope-seal">
+          🦋
+        </div>
+
+        <button
+          class="open-invitation"
+          id="openInvitationButton"
+          onclick="openInvitation()"
+        >
+          اضغطوا لفتح الدعوة
+        </button>
+
+      </div>
+
+      <div class="envelope-hint">
+        افتحوا الظرف لتبدأ الحكاية ✨
+      </div>
+
+    </div>
+
+
+  </div>
+
+</header>
 
 
   <!-- =======================================================
@@ -2438,7 +2888,8 @@
           </div>
 
           <div class="after-event-text">
-            مبارك التخرج يا قُرة العين (لُـجـيـن) 🤍
+            مبارك التخرج يا قُرة العين (لُـجـيـن) 🤍<br>
+            ومنها للأعلى دائمًا
           </div>
 
         </div>
@@ -2556,7 +3007,7 @@
         class="action-button primary reveal reveal-up"
         onclick="openMap()"
       >
-        📍 الموقع
+        📍 فتح الموقع على الخريطة
       </button>
 
 
@@ -2564,7 +3015,7 @@
         class="action-button reveal reveal-up"
         onclick="addToCalendar()"
       >
-        🗓️ أضف للجدول
+        🗓️ أضف الموعد
       </button>
 
 
@@ -2580,7 +3031,7 @@
         class="action-button reveal reveal-up"
         onclick="openMessageModal()"
       >
-        💌 اترك رسالة
+        💌 اتركوا تهنئتكم
       </button>
 
     </div>
@@ -2613,7 +3064,7 @@
 
       <div class="footer-class reveal reveal-up">
 
-         🎓🥼 𝑪𝒍𝒂𝒔𝒔 𝑶𝑭 <strong>2029</strong>
+        🎓🥼 𝑪𝒍𝒂𝒔𝒔 𝑶𝑭 <strong>2029</strong>
       </div>
 
     </footer>
@@ -2633,6 +3084,18 @@
     aria-label="تشغيل الموسيقى"
   >
     🎵
+  </button>
+
+
+  <button
+    class="back-to-top"
+    id="backToTop"
+    type="button"
+    onclick="scrollToTop()"
+    aria-label="العودة إلى أعلى الصفحة"
+    title="العودة إلى الأعلى"
+  >
+    ↑
   </button>
 
 
@@ -2657,11 +3120,11 @@
 
 
       <h2 class="modal-title">
-        💌 اترك كلمة جميلة
+        💌 اتركوا تهنئتكم
       </h2>
 
       <p class="modal-subtitle">
-        رسالتك ستبقى ذكرى جميلة من هذا اليوم 🤍
+        تهنئتكم ستبقى ذكرى جميلة من هذا اليوم 🤍
       </p>
 
 
@@ -2702,7 +3165,8 @@
           <textarea
             class="form-textarea"
             id="guestMessage"
-            placeholder="اكتب رسالتك هنا..."
+            placeholder="اكتب تهنئتك هنا..."
+            maxlength="600"
             required
           ></textarea>
 
@@ -2801,36 +3265,102 @@
       "j68954809@gmail.com";
 
 
-    /* =======================================================
-       LOADING
-    ======================================================== */
+   /* =======================================================
+   LOADING + MUSIC CHOICE
+======================================================= */
 
-    window.addEventListener(
-      "load",
-      () => {
+window.addEventListener(
+  "load",
+  () => {
 
-        setTimeout(
-          () => {
+    const loadingScreen =
+      document.getElementById(
+        "loadingScreen"
+      );
 
-            const loadingScreen =
-              document.getElementById(
-                "loadingScreen"
-              );
+    const musicYes =
+      document.getElementById(
+        "loadingMusicYes"
+      );
 
-            if (loadingScreen) {
-              loadingScreen.classList.add(
-                "hide"
-              );
-            }
-
-          },
-          1000
-        );
-
-      }
-    );
+    const musicNo =
+      document.getElementById(
+        "loadingMusicNo"
+      );
 
 
+    if (!loadingScreen) return;
+
+
+    let musicChoiceMade = false;
+
+
+    function finishLoading() {
+
+  if (musicChoiceMade) return;
+
+  musicChoiceMade = true;
+
+  loadingScreen.classList.add("hide");
+
+  /* تبدأ أنيميشن الصفحة الأولى بعد انتهاء الـLoading */
+
+  setTimeout(() => {
+
+    const hero = document.querySelector(".hero");
+
+    if (hero) {
+      hero.classList.add("hero-started");
+    }
+
+  }, 350);
+
+}
+
+  
+
+
+    /* =========================
+       YES - تشغيل الموسيقى
+    ========================= */
+
+    if (musicYes) {
+
+      musicYes.addEventListener(
+        "click",
+        async () => {
+
+          await startMusic();
+
+          finishLoading();
+
+        }
+      );
+
+    }
+
+
+    /* =========================
+       NO - بدون موسيقى
+    ========================= */
+
+    if (musicNo) {
+
+      musicNo.addEventListener(
+        "click",
+        () => {
+
+          stopMusic();
+
+          finishLoading();
+
+        }
+      );
+
+    }
+
+  }
+);
     /* =======================================================
        PETALS
     ======================================================== */
@@ -2943,7 +3473,7 @@
                 block: "start"
               });
 
-              showMusicPrompt();
+              
 
             },
             500
@@ -2994,6 +3524,7 @@
       );
 
     let musicPlaying = false;
+    let musicFadeTimer = null;
 
 
     async function startMusic() {
@@ -3002,9 +3533,16 @@
 
       try {
 
-        audio.volume = 0.3;
+        if (musicFadeTimer) clearInterval(musicFadeTimer);
+        audio.volume = 0;
 
         await audio.play();
+        let volume = 0;
+        musicFadeTimer = setInterval(() => {
+          volume = Math.min(0.3, volume + 0.03);
+          audio.volume = volume;
+          if (volume >= 0.3) clearInterval(musicFadeTimer);
+        }, 100);
 
         musicPlaying = true;
 
@@ -3043,7 +3581,12 @@
 
       if (!audio) return;
 
+      if (musicFadeTimer) {
+        clearInterval(musicFadeTimer);
+        musicFadeTimer = null;
+      }
       audio.pause();
+      audio.volume = 0.3;
 
       musicPlaying = false;
 
@@ -3070,166 +3613,33 @@
       }
 
     }
+/* =======================================================
+   STOP MUSIC WHEN LEAVING THE BROWSER
+======================================================== */
 
+document.addEventListener(
+  "visibilitychange",
+  () => {
 
-    /* =======================================================
-       MUSIC PROMPT
-    ======================================================== */
+    if (document.hidden) {
 
-    function showMusicPrompt() {
-
-      if (
-        document.getElementById(
-          "musicPrompt"
-        )
-      ) {
-        return;
-      }
-
-      const prompt =
-        document.createElement(
-          "div"
-        );
-
-      prompt.id =
-        "musicPrompt";
-
-      prompt.className =
-        "music-prompt";
-
-
-      prompt.innerHTML = `
-
-        <div class="music-prompt-text">
-          🎵 أتحب إضافة موسيقى للجو؟
-        </div>
-
-        <div class="music-prompt-actions">
-
-          <button
-            class="music-choice yes"
-            id="musicYes"
-          >
-            نعم
-          </button>
-
-          <button
-            class="music-choice"
-            id="musicNo"
-          >
-            لا
-          </button>
-
-        </div>
-
-      `;
-
-
-      document.body.appendChild(
-        prompt
-      );
-
-
-      requestAnimationFrame(
-        () => {
-
-          prompt.classList.add(
-            "show"
-          );
-
-        }
-      );
-
-
-      const yes =
-        document.getElementById(
-          "musicYes"
-        );
-
-      const no =
-        document.getElementById(
-          "musicNo"
-        );
-
-
-      if (yes) {
-
-        yes.addEventListener(
-          "click",
-          () => {
-
-            startMusic();
-
-            hideMusicPrompt();
-
-          }
-        );
-
-      }
-
-
-      if (no) {
-
-        no.addEventListener(
-          "click",
-          hideMusicPrompt
-        );
-
-      }
-
-
-      setTimeout(
-        () => {
-
-          if (
-            document.body.contains(
-              prompt
-            )
-          ) {
-
-            hideMusicPrompt();
-
-          }
-
-        },
-        10000
-      );
+      stopMusic();
 
     }
 
+  }
+);
 
-    function hideMusicPrompt() {
+window.addEventListener(
+  "pagehide",
+  () => {
 
-      const prompt =
-        document.getElementById(
-          "musicPrompt"
-        );
+    stopMusic();
 
-      if (!prompt) return;
+  }
+);
 
-      prompt.classList.remove(
-        "show"
-      );
-
-      setTimeout(
-        () => {
-
-          if (
-            document.body.contains(
-              prompt
-            )
-          ) {
-            prompt.remove();
-          }
-
-        },
-        500
-      );
-
-    }
-
-
-    /* =======================================================
+     /* =======================================================
        COUNTDOWN
     ======================================================== */
 
@@ -3357,48 +3767,50 @@
 
     function addToCalendar() {
 
-      /*
-        7:00 PM Jordan time = 16:00 UTC
-        9:00 PM Jordan time = 18:00 UTC
-      */
+      /* ملف ICS يعمل مع Google وApple وOutlook وSamsung Calendar */
+      const ics = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Lujain Graduation Invitation//AR",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "BEGIN:VEVENT",
+        "UID:lujain-graduation-2029@example.com",
+        "DTSTAMP:20260101T000000Z",
+        "DTSTART:20290626T160000Z",
+        "DTEND:20290626T180000Z",
+        "SUMMARY:تخرج لُجين سلامة الخوالدة 🎓",
+        "LOCATION:منزل والد لُجين (أبو نشأت)",
+        "DESCRIPTION:مشاركة فرحة تخرج لُجين سلامة الخوالدة - CLASS OF 2029",
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ].join("\r\n");
 
-      const start =
-        "20290626T160000Z";
-
-      const end =
-        "20290626T180000Z";
-
-      const title =
-        "تخرج لُجين سلامة الخوالدة 🎓";
-
-      const location =
-        "منزل والد لُجين (أبو نشأت)";
-
-      const details =
-        "مشاركة فرحة تخرج لُجين سلامة الخوالدة - CLASS OF 2029";
-
-
-      const calendarURL =
-        "https://calendar.google.com/calendar/render" +
-        "?action=TEMPLATE" +
-        "&text=" +
-        encodeURIComponent(title) +
-        "&dates=" +
-        start +
-        "/" +
-        end +
-        "&location=" +
-        encodeURIComponent(location) +
-        "&details=" +
-        encodeURIComponent(details);
+      const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "lujain-graduation-2029.ics";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
 
 
-      window.open(
-        calendarURL,
-        "_blank",
-        "noopener,noreferrer"
-      );
+    /* =======================================================
+       BACK TO TOP
+    ======================================================== */
 
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (!backToTop) return;
+      backToTop.classList.toggle("show", window.scrollY > 500);
+    }, { passive: true });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
 
@@ -3414,7 +3826,7 @@
           "دعوة تخرج لُجين سلامة الخوالدة 🎓",
 
         text:
-          "يسعدني دعوتكم لمشاركة فرحة تخرجي 🤍",
+          "يسعدني دعوتكم لمشاركتي فرحة تخرجي من جامعة العلوم والتكنولوجيا الأردنية 🎓🤍",
 
         url:
           window.location.href
@@ -3734,7 +4146,7 @@
 
 
             status.textContent =
-              "وصلت رسالتك بنجاح 🤍✨";
+              "وصلت تهنئتك وستبقى ذكرى جميلة 🤍✨";
 
 
             messageForm.reset();
