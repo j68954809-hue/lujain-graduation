@@ -3011,13 +3011,6 @@
       </button>
 
 
-      <button
-        class="action-button reveal reveal-up"
-        onclick="addToCalendar()"
-      >
-        🗓️ أضف الموعد
-      </button>
-
 
 
       <button
@@ -3321,11 +3314,11 @@ window.addEventListener(
 
       musicYes.addEventListener(
         "click",
-        async () => {
+        () => {
 
-          await startMusic();
-
-          finishLoading();
+          startMusic().finally(() => {
+            finishLoading();
+          });
 
         }
       );
@@ -3517,7 +3510,6 @@ window.addEventListener(
       );
 
     let musicPlaying = false;
-    let musicFadeTimer = null;
 
 
     async function startMusic() {
@@ -3526,16 +3518,10 @@ window.addEventListener(
 
       try {
 
-        if (musicFadeTimer) clearInterval(musicFadeTimer);
-        audio.volume = 0;
+        audio.muted = false;
+        audio.volume = 0.3;
 
         await audio.play();
-        let volume = 0;
-        musicFadeTimer = setInterval(() => {
-          volume = Math.min(0.3, volume + 0.03);
-          audio.volume = volume;
-          if (volume >= 0.3) clearInterval(musicFadeTimer);
-        }, 100);
 
         musicPlaying = true;
 
@@ -3574,11 +3560,8 @@ window.addEventListener(
 
       if (!audio) return;
 
-      if (musicFadeTimer) {
-        clearInterval(musicFadeTimer);
-        musicFadeTimer = null;
-      }
       audio.pause();
+      audio.muted = false;
       audio.volume = 0.3;
 
       musicPlaying = false;
@@ -3757,26 +3740,6 @@ window.addEventListener(
     /* =======================================================
        CALENDAR
     ======================================================== */
-
-    function addToCalendar() {
-
-      const title = "تخرج لُجين سلامة الخوالدة 🎓";
-      const location = "منزل والد لُجين (أبو نشأت)";
-      const details = "مشاركة فرحة تخرج لُجين سلامة الخوالدة - CLASS OF 2029";
-      const start = "20290626T160000Z";
-      const end = "20290626T180000Z";
-
-      const calendarURL =
-        "https://calendar.google.com/calendar/render" +
-        "?action=TEMPLATE" +
-        "&text=" + encodeURIComponent(title) +
-        "&dates=" + start + "/" + end +
-        "&location=" + encodeURIComponent(location) +
-        "&details=" + encodeURIComponent(details);
-
-      window.open(calendarURL, "_blank", "noopener,noreferrer");
-    }
-
 
     /* =======================================================
        BACK TO TOP
