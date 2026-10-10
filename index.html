@@ -9,27 +9,32 @@
     content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية"
   />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
-  <meta
-    property="og:description"
-    content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية"
-  >
-  <meta property="og:image" content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png">
-  <meta property="og:image:width" content="2560">
-  <meta property="og:image:height" content="1440">
-  <meta property="og:image:type" content="image/png">
+ <!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
+<meta
+  property="og:description"
+  content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية"
+>
+<meta
+  property="og:image"
+  content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png"
+>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
-  <meta
-    property="twitter:description"
-    content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029"
-  >
-  <meta property="twitter:image" content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png">
-
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
+<meta
+  name="twitter:description"
+  content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029"
+>
+<meta
+  name="twitter:image"
+  content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png"
+>
   <!-- Favicon -->
   <link
     rel="icon"
@@ -3739,11 +3744,6 @@ window.addEventListener(
 
     }
 
-
-    /* =======================================================
-       CALENDAR
-    ======================================================== */
-
     /* =======================================================
        BACK TO TOP
     ======================================================== */
@@ -3758,66 +3758,6 @@ window.addEventListener(
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
-
-
-    /* =======================================================
-       SHARE
-    ======================================================== */
-
-    async function shareInvitation() {
-
-      const shareData = {
-
-        title:
-          "دعوة تخرج لُجين سلامة الخوالدة 🎓",
-
-        text:
-          "يسعدني دعوتكم لمشاركتي فرحة تخرجي من جامعة العلوم والتكنولوجيا الأردنية 🎓🤍",
-
-        url:
-          window.location.href
-
-      };
-
-
-      if (navigator.share) {
-
-        try {
-
-          await navigator.share(
-            shareData
-          );
-
-        } catch (error) {
-
-          /* User closed share dialog */
-
-        }
-
-      } else {
-
-        try {
-
-          await navigator.clipboard.writeText(
-            window.location.href
-          );
-
-          alert(
-            "تم نسخ رابط الدعوة 🤍"
-          );
-
-        } catch (error) {
-
-          alert(
-            "يمكنكم نسخ رابط الصفحة ومشاركته 🤍"
-          );
-
-        }
-
-      }
-
-    }
-
 
     /* =======================================================
        SCROLL REVEAL - كل عنصر مستقل
@@ -4153,4 +4093,4 @@ window.addEventListener(
   </script>
 
 </body>
-</html>
+</html>    
