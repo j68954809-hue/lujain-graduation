@@ -9,32 +9,27 @@
     content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية"
   />
 
- <!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
-<meta
-  property="og:description"
-  content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية"
->
-<meta
-  property="og:image"
-  content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png"
->
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:type" content="image/png">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
+  <meta
+    property="og:description"
+    content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية"
+  >
+  <meta property="og:image" content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png">
+  <meta property="og:image:width" content="2560">
+  <meta property="og:image:height" content="1440">
+  <meta property="og:image:type" content="image/png">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
-<meta
-  name="twitter:description"
-  content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029"
->
-<meta
-  name="twitter:image"
-  content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png"
->
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
+  <meta
+    property="twitter:description"
+    content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029"
+  >
+  <meta property="twitter:image" content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png">
+
   <!-- Favicon -->
   <link
     rel="icon"
@@ -2530,6 +2525,333 @@
       }
     }
 
+
+
+    /* =========================================================
+       REALISTIC STATIONERY EDITION
+       A photographed-paper mood inspired by the invitation reference.
+    ========================================================= */
+    body {
+      background:
+        radial-gradient(circle at 12% 8%, rgba(255,255,255,.72), transparent 28%),
+        linear-gradient(135deg, #cbbab0 0%, #e7d9d0 48%, #bfa99e 100%);
+      padding: 22px 14px 44px;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -3;
+      opacity: .22;
+      background-image:
+        radial-gradient(rgba(109,81,75,.18) .6px, transparent .7px);
+      background-size: 7px 7px;
+      mix-blend-mode: multiply;
+    }
+
+    .hero {
+      width: min(1180px, 100%);
+      min-height: calc(100vh - 66px);
+      margin: 0 auto;
+      padding: 46px 24px 64px;
+      border: 1px solid rgba(255,255,255,.75);
+      border-radius: 5px;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(255,250,246,.37), rgba(255,250,246,.45)),
+        url("stationery-flatlay.webp") center / cover no-repeat;
+      box-shadow:
+        0 24px 70px rgba(77,55,48,.26),
+        0 2px 0 rgba(255,255,255,.85) inset;
+    }
+
+    .hero::before,
+    .invitation::before {
+      content: "";
+      position: absolute;
+      inset: 16px;
+      pointer-events: none;
+      border: 1px solid rgba(199,163,106,.42);
+      box-shadow: 0 0 0 6px rgba(255,255,255,.10);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      width: min(690px, 100%);
+      padding: 30px 24px 34px;
+      margin: 0 auto;
+      border: 1px solid rgba(199,163,106,.28);
+      background: rgba(255,250,246,.32);
+      box-shadow: 0 14px 38px rgba(109,81,75,.08);
+      backdrop-filter: blur(1.5px);
+    }
+
+    .hero-line,
+    .bismillah,
+    .quote,
+    .father-invitation {
+      text-shadow: 0 1px 0 rgba(255,255,255,.75);
+    }
+
+    .envelope {
+      border-radius: 4px;
+      border: 1px solid rgba(164,112,105,.24);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.18), transparent 55%),
+        linear-gradient(145deg, #f0cfd0, #dca9ae);
+      box-shadow:
+        0 24px 38px rgba(109,81,75,.25),
+        0 1px 0 rgba(255,255,255,.8) inset;
+    }
+
+    .envelope-seal {
+      background: #e8bfc4;
+      border-color: rgba(154,106,100,.55);
+      color: #8b6b63;
+      box-shadow: 0 7px 16px rgba(109,81,75,.20), 0 1px 0 rgba(255,255,255,.8) inset;
+    }
+
+    .envelope-hint {
+      color: #8b6b63;
+      font-style: italic;
+    }
+
+    .invitation {
+      width: min(1180px, 100%);
+      margin: 24px auto 0;
+      padding: 82px 28px 55px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.75);
+      border-radius: 5px;
+      background:
+        linear-gradient(rgba(255,250,246,.66), rgba(255,250,246,.72)),
+        url("stationery-flatlay.webp") center / cover fixed no-repeat;
+      box-shadow:
+        0 24px 70px rgba(77,55,48,.22),
+        0 2px 0 rgba(255,255,255,.85) inset;
+    }
+
+    .invitation .container {
+      position: relative;
+      z-index: 2;
+      width: min(920px, 100%);
+      padding: 34px 26px 42px;
+      border: 1px solid rgba(199,163,106,.30);
+      background: rgba(255,250,246,.52);
+      box-shadow: 0 14px 38px rgba(109,81,75,.08);
+      backdrop-filter: blur(2px);
+    }
+
+    .details-card,
+    .time-box,
+    .after-event,
+    .graduate-detail,
+    .detail-item {
+      border-radius: 4px;
+    }
+
+    .details-card {
+      background: rgba(255,250,246,.67);
+      box-shadow: 0 18px 45px rgba(109,81,75,.10);
+    }
+
+    .time-box,
+    .detail-item {
+      background: rgba(255,255,255,.52);
+    }
+
+    .actions {
+      position: relative;
+      z-index: 2;
+    }
+
+    footer {
+      position: relative;
+      z-index: 2;
+      background: rgba(255,250,246,.38);
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 0 0 28px; }
+      .hero {
+        min-height: 100vh;
+        border-radius: 0;
+        padding: 28px 12px 50px;
+      }
+      .hero::before,
+      .invitation::before { inset: 9px; }
+      .hero-inner {
+        padding: 23px 13px 28px;
+        background: rgba(255,250,246,.46);
+      }
+      .invitation {
+        margin-top: 14px;
+        border-radius: 0;
+        padding: 58px 12px 34px;
+      }
+      .invitation .container {
+        padding: 24px 12px 30px;
+      }
+    }
+
+
+
+    /* =========================================================
+       MOBILE ENVELOPE CORRECTION
+    ========================================================= */
+    @media (max-width: 640px) {
+      .hero {
+        width: 100%;
+        padding: 24px 10px 48px;
+        background-position: center top;
+      }
+
+      .hero-inner {
+        width: min(100%, 360px);
+        padding: 22px 10px 28px;
+        background: rgba(255,250,246,.58);
+      }
+
+      .hero-envelope {
+        width: 100%;
+        margin: 30px auto 0;
+      }
+
+      .envelope {
+        width: min(330px, calc(100vw - 58px));
+        height: 214px;
+        margin: 0 auto;
+        box-shadow:
+          0 22px 34px rgba(109,81,75,.25),
+          0 1px 0 rgba(255,255,255,.85) inset;
+      }
+
+      .envelope-letter {
+        left: 7%;
+        right: 7%;
+      }
+
+      .envelope-seal {
+        width: 54px;
+        height: 54px;
+        font-size: 1.35rem;
+      }
+
+      .open-invitation {
+        width: calc(100% - 28px);
+        bottom: 14px;
+        padding: 10px 14px;
+        font-size: .94rem;
+      }
+
+      .envelope-hint {
+        margin-top: 13px;
+        font-size: .86rem;
+      }
+
+      .hero .quote {
+        margin-top: 18px;
+        font-size: 1.05rem;
+      }
+    }
+
+
+
+    /* =========================================================
+       TRANSPARENT STATIONERY LAYER
+    ========================================================= */
+    .hero {
+      background:
+        linear-gradient(rgba(255,250,246,.12), rgba(255,250,246,.18)),
+        url("stationery-flatlay.webp") center / cover no-repeat;
+    }
+
+    .hero-inner {
+      background: rgba(255,250,246,.18);
+      border-color: rgba(199,163,106,.22);
+      box-shadow: 0 12px 30px rgba(109,81,75,.045);
+      backdrop-filter: blur(.6px);
+    }
+
+    .invitation {
+      background:
+        linear-gradient(rgba(255,250,246,.42), rgba(255,250,246,.50)),
+        url("stationery-flatlay.webp") center / cover fixed no-repeat;
+    }
+
+    .invitation .container {
+      background: rgba(255,250,246,.34);
+      box-shadow: 0 12px 30px rgba(109,81,75,.055);
+      backdrop-filter: blur(1px);
+    }
+
+    .hero-line,
+    .bismillah,
+    .quote,
+    .father-invitation {
+      text-shadow:
+        0 1px 0 rgba(255,255,255,.92),
+        0 2px 10px rgba(255,250,246,.32);
+    }
+
+    @media (max-width: 640px) {
+      .hero-inner {
+        background: rgba(255,250,246,.22);
+      }
+    }
+
+
+
+    /* =========================================================
+       FOREGROUND BOTANICAL LAYER
+    ========================================================= */
+    .petals,
+    .butterflies {
+      z-index: 6;
+      pointer-events: none;
+    }
+
+    .hero-inner,
+    .invitation .container {
+      z-index: 7;
+    }
+
+    /* الصفحة الأولى: ورق أخف حتى تظهر القرطاسية من خلفها */
+    .hero {
+      background:
+        linear-gradient(rgba(255,250,246,.055), rgba(255,250,246,.09)),
+        url("stationery-flatlay.webp") center / cover no-repeat;
+    }
+
+    .hero-inner {
+      background: rgba(255,250,246,.085);
+      backdrop-filter: blur(.25px);
+      box-shadow: 0 10px 26px rgba(109,81,75,.035);
+    }
+
+    /* الفراشات والبتلات فوق الورق، والنص يبقى فوقها */
+    .butterfly,
+    .petal {
+      opacity: .52;
+    }
+
+    .hero-line,
+    .bismillah,
+    .quote,
+    .father-invitation {
+      position: relative;
+      z-index: 8;
+    }
+
+    @media (max-width: 640px) {
+      .hero-inner {
+        background: rgba(255,250,246,.12);
+      }
+    }
+
   </style>
 </head>
 
@@ -3744,6 +4066,11 @@ window.addEventListener(
 
     }
 
+
+    /* =======================================================
+       CALENDAR
+    ======================================================== */
+
     /* =======================================================
        BACK TO TOP
     ======================================================== */
@@ -3758,6 +4085,66 @@ window.addEventListener(
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
+
+
+    /* =======================================================
+       SHARE
+    ======================================================== */
+
+    async function shareInvitation() {
+
+      const shareData = {
+
+        title:
+          "دعوة تخرج لُجين سلامة الخوالدة 🎓",
+
+        text:
+          "يسعدني دعوتكم لمشاركتي فرحة تخرجي من جامعة العلوم والتكنولوجيا الأردنية 🎓🤍",
+
+        url:
+          window.location.href
+
+      };
+
+
+      if (navigator.share) {
+
+        try {
+
+          await navigator.share(
+            shareData
+          );
+
+        } catch (error) {
+
+          /* User closed share dialog */
+
+        }
+
+      } else {
+
+        try {
+
+          await navigator.clipboard.writeText(
+            window.location.href
+          );
+
+          alert(
+            "تم نسخ رابط الدعوة 🤍"
+          );
+
+        } catch (error) {
+
+          alert(
+            "يمكنكم نسخ رابط الصفحة ومشاركته 🤍"
+          );
+
+        }
+
+      }
+
+    }
+
 
     /* =======================================================
        SCROLL REVEAL - كل عنصر مستقل
@@ -4093,4 +4480,5 @@ window.addEventListener(
   </script>
 
 </body>
-</html>    
+</html>
+    
