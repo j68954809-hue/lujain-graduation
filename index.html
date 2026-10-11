@@ -3,2655 +3,410 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta
-    name="description"
-    content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية"
-  />
-
-  <!-- Open Graph -->
+  <meta name="description" content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية" />
   <meta property="og:type" content="website">
   <meta property="og:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
-  <meta
-    property="og:description"
-    content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية"
-  >
+  <meta property="og:description" content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029 - العلوم الطبية المخبرية">
   <meta property="og:image" content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png">
   <meta property="og:image:width" content="2560">
   <meta property="og:image:height" content="1440">
   <meta property="og:image:type" content="image/png">
-
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:title" content="دعوة تخرج لُجين سلامة الخوالدة 🎓">
-  <meta
-    property="twitter:description"
-    content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029"
-  >
+  <meta property="twitter:description" content="دعوة تخرج لُجين سلامة الخوالدة - دفعة 2029">
   <meta property="twitter:image" content="https://j68954809-hue.github.io/lujain-graduation/thumbnail.png">
-
-  <!-- Favicon -->
-  <link
-    rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.11em' font-size='89'>🎓</text></svg>"
-  >
-
-  <link
-    rel="apple-touch-icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23e8bfc4' width='100' height='100' rx='20'/><text x='50%25' y='50%25' font-size='60' text-anchor='middle' dy='.3em'>🎓</text></svg>"
-  >
-
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.11em' font-size='89'>🎓</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23e8bfc4' width='100' height='100' rx='20'/><text x='50%25' y='50%25' font-size='60' text-anchor='middle' dy='.3em'>🎓</text></svg>">
   <title>دعوة تخرج لُجين سلامة الخوالدة 🎓</title>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- EmailJS -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <style>
-
-    /* =========================================================
-       ROOT
-    ========================================================= */
-
     :root {
       --cream: #fbf2eb;
       --cream-2: #fffaf6;
       --cream-3: #f7e9e1;
-
       --pink: #e8bfc4;
       --pink-2: #f1d7d9;
       --pink-dark: #cf959f;
-
       --brown: #6d514b;
       --brown-2: #8b6b63;
       --brown-light: #b99991;
-
       --gold: #c7a36a;
       --gold-light: #ead8b8;
-
       --white: #ffffff;
       --line: #ead9d1;
-
-      --shadow-soft:
-        0 15px 45px rgba(109, 81, 75, 0.10);
-
-      --shadow-card:
-        0 20px 60px rgba(109, 81, 75, 0.13);
-
+      --shadow-soft: 0 15px 45px rgba(109, 81, 75, 0.10);
+      --shadow-card: 0 20px 60px rgba(109, 81, 75, 0.13);
       --radius: 28px;
     }
 
-
-    /* =========================================================
-       RESET
-    ========================================================= */
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       min-height: 100vh;
       overflow-x: hidden;
-
       background:
-        radial-gradient(
-          circle at 10% 10%,
-          rgba(232, 191, 196, 0.30),
-          transparent 25%
-        ),
-        radial-gradient(
-          circle at 90% 15%,
-          rgba(234, 216, 184, 0.25),
-          transparent 25%
-        ),
-        linear-gradient(
-          180deg,
-          var(--cream-2),
-          var(--cream),
-          #fffdfb
-        );
-
+        radial-gradient(circle at 10% 10%, rgba(232, 191, 196, 0.30), transparent 25%),
+        radial-gradient(circle at 90% 15%, rgba(234, 216, 184, 0.25), transparent 25%),
+        linear-gradient(180deg, var(--cream-2), var(--cream), #fffdfb);
       color: var(--brown);
       font-family: "Amiri", serif;
     }
 
-    button,
-    input,
-    textarea {
-      font-family: inherit;
-    }
+    button, input, textarea { font-family: inherit; }
+    button { cursor: pointer; }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--pink); color: var(--brown); }
 
-    button {
-      cursor: pointer;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    ::selection {
-      background: var(--pink);
-      color: var(--brown);
-    }
-
-
-    /* =========================================================
-       LOADING SCREEN
-    ========================================================= */
-
+    /* Loading Screen */
     .loading-screen {
-      position: fixed;
-      inset: 0;
-      z-index: 99999;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background:
-        radial-gradient(
-          circle at center,
-          #fffaf6 0%,
-          #fbf2eb 65%,
-          #f4e0d9 100%
-        );
-
-      transition:
-        opacity 0.8s ease,
-        visibility 0.8s ease;
-    }
-
-    .loading-screen.hide {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
-
-    .loading-content {
-      text-align: center;
-    }
-
-    .loading-cap {
-      font-size: 3rem;
-      animation: loadingFloat 2s ease-in-out infinite;
-    }
-
-    .loading-name {
-      margin-top: 12px;
-
-      font-family: "Dancing Script", cursive;
-      font-size: 2.4rem;
-      color: var(--brown);
-    }
-
-    .loading-line {
-      width: 90px;
-      height: 2px;
-
-      margin: 15px auto;
-
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          var(--gold),
-          transparent
-        );
-    }
-
-    .loading-text {
-      font-size: 0.95rem;
-      color: var(--brown-light);
-    }
-/* =========================================================
-   LOADING MUSIC PROMPT
-========================================================= */
-
-.loading-music-prompt {
-  margin: 28px auto 0;
-
-  width: min(330px, 90vw);
-
-  padding: 16px 18px;
-
-  border:
-    1px solid
-    var(--line);
-
-  border-radius: 20px;
-
-  background:
-    rgba(255,250,246,0.94);
-
-  box-shadow:
-    0 15px 40px
-    rgba(109,81,75,0.13);
-
-  backdrop-filter:
-    blur(12px);
-
-  opacity: 0;
-
-  transform:
-    translateY(12px);
-
-  animation:
-    loadingMusicAppear
-    0.7s
-    ease
-    0.5s
-    forwards;
-}
-
-
-.loading-music-text {
-  font-size: 0.95rem;
-
-  color:
-    var(--brown);
-
-  margin-bottom: 12px;
-}
-
-
-.loading-music-actions {
-  display: flex;
-
-  justify-content: center;
-
-  gap: 8px;
-}
-
-
-.loading-music-choice {
-  min-width: 85px;
-
-  padding:
-    8px 16px;
-
-  border:
-    1px solid
-    var(--line);
-
-  border-radius: 999px;
-
-  background:
-    #ffffff;
-
-  color:
-    var(--brown);
-
-  font-size:
-    0.85rem;
-
-  font-weight:
-    700;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-
-.loading-music-choice:hover {
-  transform:
-    translateY(-2px);
-
-  box-shadow:
-    0 6px 15px
-    rgba(109,81,75,0.10);
-}
-
-
-.loading-music-choice.yes {
-  background:
-    var(--pink-2);
-
-  border-color:
-    var(--pink);
-}
-
-
-@keyframes loadingMusicAppear {
-
-  from {
-    opacity: 0;
-
-    transform:
-      translateY(12px);
-  }
-
-  to {
-    opacity: 1;
-
-    transform:
-      translateY(0);
-  }
-
-}
-    /* =========================================================
-       BACKGROUND DECORATION
-    ========================================================= */
-
-    .glow {
-      position: fixed;
-
-      width: 240px;
-      height: 240px;
-
-      border-radius: 50%;
-
-      filter: blur(60px);
-
-      pointer-events: none;
-
-      z-index: -2;
-    }
-
-    .glow-1 {
-      top: 5%;
-      right: -100px;
-      background: rgba(232, 191, 196, 0.25);
-    }
-
-    .glow-2 {
-      bottom: 10%;
-      left: -100px;
-      background: rgba(234, 216, 184, 0.22);
-    }
-
-    .petals,
-    .butterflies {
-      position: fixed;
-      inset: 0;
-
-      overflow: hidden;
-
-      pointer-events: none;
-
-      z-index: 1;
-    }
-
-    .petal {
-      position: absolute;
-      top: -30px;
-
-      width: 10px;
-      height: 16px;
-
-      border-radius: 70% 30% 70% 30%;
-
-      background: rgba(232, 191, 196, 0.55);
-
-      animation:
-        petalFall linear infinite,
-        petalSway ease-in-out infinite;
-    }
-
-    @keyframes petalFall {
-      from {
-        transform: translateY(-40px) rotate(0deg);
-      }
-
-      to {
-        transform: translateY(110vh) rotate(360deg);
-      }
-    }
-
-    @keyframes petalSway {
-      0%,
-      100% {
-        margin-left: 0;
-      }
-
-      50% {
-        margin-left: 35px;
-      }
-    }
-
-    .butterfly {
-      position: absolute;
-
-      font-size: 1.25rem;
-      opacity: 0.58;
-
-      animation:
-        butterflyFloat 7s ease-in-out infinite;
-    }
-
-    .butterfly:nth-child(1) {
-      top: 19%;
-      right: 7%;
-      animation-delay: 1s;
-    }
-
-    .butterfly:nth-child(2) {
-      top: 52%;
-      left: 6%;
-      animation-delay: 3s;
-      font-size: 1rem;
-    }
-
-    .butterfly:nth-child(3) {
-      bottom: 14%;
-      right: 10%;
-      animation-delay: 5s;
-      font-size: 0.9rem;
-    }
-
-    /* =========================================================
-       EXTRA BUTTERFLIES
-    ========================================================= */
-
-    .extra-left {
-      top: 30%;
-      left: 10%;
-      animation-delay: 2s;
-      font-size: 1.1rem;
-    }
-
-    .super-center {
-      top: 55%;
-      left: 50%;
-      font-size: 1.20rem;
-      opacity: 0.8;
-      z-index: 15;
-      animation: superButterflyFloat 50s ease-in-out infinite;
-    }
-
-    @keyframes butterflyFloat {
-      0%,
-      100% {
-        transform:
-          translate(0, 0)
-          rotate(-4deg);
-      }
-
-      50% {
-        transform:
-          translate(12px, -18px)
-          rotate(5deg);
-      }
-    }
-
-    @keyframes superButterflyFloat {
-      0% {
-        transform: translateX(-50%) translate(0, 0) rotate(-8deg) scale(1);
-      }
-
-      8% {
-        transform: translateX(-50%) translate(40px, -45vh) rotate(15deg) scale(1.1);
-      }
-
-      16% {
-        transform: translateX(-50%) translate(-30px, -85vh) rotate(-12deg) scale(0.9);
-      }
-
-      24% {
-        transform: translateX(-50%) translate(-60px, -95vh) rotate(20deg) scale(1.15);
-      }
-
-      32% {
-        transform: translateX(-50%) translate(20px, -50vh) rotate(-15deg) scale(0.95);
-      }
-
-      42% {
-        transform: translateX(-50%) translate(50px, -10vh) rotate(12deg) scale(1.1);
-      }
-
-      52% {
-        transform: translateX(-50%) translate(-40px, 30vh) rotate(-18deg) scale(1.05);
-      }
-
-      62% {
-        transform: translateX(-50%) translate(-70px, 70vh) rotate(14deg) scale(0.9);
-      }
-
-      72% {
-        transform: translateX(-50%) translate(30px, 90vh) rotate(-10deg) scale(1.2);
-      }
-
-      82% {
-        transform: translateX(-50%) translate(60px, 95vh) rotate(16deg) scale(1);
-      }
-
-      92% {
-        transform: translateX(-50%) translate(-20px, 50vh) rotate(-14deg) scale(1.1);
-      }
-
-      100% {
-        transform: translateX(-50%) translate(0, 0) rotate(-8deg) scale(1);
-      }
-    }
-
-
-    /* =========================================================
-       HERO
-    ========================================================= */
-
-    .hero {
-      min-height: 100vh;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      padding: 45px 20px 70px;
-
-      position: relative;
-    }
-
-    .hero-inner {
-      width: min(900px, 100%);
-      text-align: center;
-    }
-
-    .bismillah {
-      font-size: clamp(1.45rem, 4vw, 2.1rem);
-
-      color: var(--brown-2);
-
-      margin-bottom: 25px;
-    }
-
-    .quote {
-      max-width: 720px;
-      margin: auto;
-      font-size: clamp(1.15rem, 3.5vw, 1.65rem);
-      line-height: 2;
-      color: var(--brown);
-    }
-
-    .quote::before,
-    .quote::after {
-      color: var(--gold);
-
-      font-family: Georgia, serif;
-
-      font-size: 2rem;
-    }
-
-    .quote::before {
-      content: "“";
-      margin-left: 5px;
-    }
-
-    .quote::after {
-      content: "”";
-      margin-right: 5px;
-    }
-
-    .father-invitation {
-      margin-top: 28px;
-
-      font-size:
-        clamp(
-          1rem,
-          3vw,
-          1.3rem
-        );
-
-      line-height: 2;
-
-      color: var(--brown-2);
-    }
-
-    .father-name {
-      color: var(--brown);
-      font-weight: 700;
-    }
-
-
-    /* =========================================================
-       GRADUATE NAME
-    ========================================================= */
-
-    .graduate-name-wrapper {
-      position: relative;
-
-      display: inline-block;
-
-      margin-top: 22px;
-    }
-
-    .graduate-name {
-      position: relative;
-
-      display: inline-block;
-
-      font-size:
-        clamp(
-          3.5rem,
-          12vw,
-          6.5rem
-        );
-
-      line-height: 1;
-
-      font-weight: 700;
-
-      color: var(--brown);
-
-      text-shadow:
-        0 2px 0 rgba(255,255,255,0.8),
-        0 12px 30px rgba(109,81,75,0.12);
-    }
-
-    .graduate-name::after {
-      content: "";
-
-      position: absolute;
-
-      left: 12%;
-      right: 12%;
-
-      bottom: -10px;
-
-      height: 2px;
-
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          var(--gold),
-          transparent
-        );
-    }
-
-    .name-cap {
-      position: absolute;
-      z-index: 4;
-      pointer-events: none;
-      white-space: nowrap;
-
-      top: -40px;
-      right: -45px;
-
-      font-size:
-        clamp(
-          1.8rem,
-          6vw,
-          3rem
-        );
-
-      filter:
-        drop-shadow(
-          0 6px 8px
-          rgba(109,81,75,0.12)
-        );
-
-      animation:
-        capFloat 3.5s ease-in-out infinite;
-
-      transform-origin: center;
-    }
-
-    @keyframes capFloat {
-      0%,
-      100% {
-        transform:
-          translateY(0)
-          rotate(5deg);
-      }
-
-      50% {
-        transform:
-          translateY(-10px)
-          rotate(-4deg);
-      }
-    }
-
-    .university-main {
-      font-size:
-        clamp(
-          1rem,
-          3vw,
-          1.25rem
-        );
-
-      font-weight: 700;
-    }
-
-    .university-secondary {
-      font-size: 0.98rem;
-    }
-
-    .major {
-      font-size: 1rem;
-      color: var(--brown);
-    }
-
-    .uni-badge {
-      margin-top: 12px;
-
-      padding: 7px 17px;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius: 999px;
-
-      background:
-        rgba(255,255,255,0.65);
-
-      font-family:
-        "Cormorant Garamond",
-        serif;
-
-      font-weight: 700;
-
-      letter-spacing: 2px;
-
-      box-shadow:
-        var(--shadow-soft);
-    }
-
-    .just-logo {
-      width: 72px;
-      height: 72px;
-
-      margin-top: 14px;
-
-      object-fit: contain;
-
-      filter:
-        drop-shadow(
-          0 5px 12px
-          rgba(109,81,75,0.12)
-        );
-    }
-
-
-    /* =========================================================
-       ENVELOPE
-    ========================================================= */
-
-    .envelope-section {
-      margin-top: 48px;
-    }
-
-    .envelope {
-      width: min(390px, 90vw);
-      height: 255px;
-
-      margin: auto;
-
-      position: relative;
-
-      border-radius: 18px;
-
-      background:
-        linear-gradient(
-          145deg,
-          #f9dfdf,
-          #f1cfd1
-        );
-
-      box-shadow:
-        0 30px 70px
-        rgba(109,81,75,0.18);
-
-      overflow: hidden;
-
-      perspective: 900px;
-
-      transition:
-        transform 0.5s ease,
-        box-shadow 0.5s ease;
-    }
-
-    .envelope:hover {
-      transform: translateY(-5px);
-
-      box-shadow:
-        0 38px 80px
-        rgba(109,81,75,0.22);
-    }
-
-    .envelope::before {
-      content: "";
-
-      position: absolute;
-      inset: 0;
-
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255,255,255,0.35),
-          transparent 45%
-        );
-
-      pointer-events: none;
-
-      z-index: 7;
-    }
-
-    .open-invitation {
-      position: absolute;
-
-      left: 50%;
-      bottom: 17px;
-
-      transform:
-        translateX(-50%);
-
-      width:
-        calc(100% - 40px);
-
-      padding: 11px 20px;
-
-      border:
-        1px solid
-        rgba(199,163,106,0.5);
-
-      border-radius: 999px;
-
-      background:
-        rgba(255,250,246,0.95);
-
-      color: var(--brown);
-
-      font-size: 1rem;
-
-      font-weight: 700;
-
-      box-shadow:
-        0 8px 20px
-        rgba(109,81,75,0.10);
-
-      z-index: 12;
-
-      transition:
-        transform 0.3s ease,
-        background 0.3s ease;
-    }
-
-    .open-invitation:hover {
-      transform:
-        translateX(-50%)
-        translateY(-2px);
-
-      background: #fff;
-    }
-
-    .open-invitation:disabled {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .envelope-hint {
-      margin-top: 16px;
-
-      color: var(--brown-light);
-
-      font-size: 0.92rem;
-
-      animation:
-        softPulse 2.8s
-        ease-in-out infinite;
-    }
-
-    @keyframes softPulse {
-      0%,
-      100% {
-        opacity: 0.55;
-      }
-
-      50% {
-        opacity: 1;
-      }
-    }
-
-
-    /* =========================================================
-       INVITATION
-    ========================================================= */
-
-    .invitation {
-      display: none;
-
-      padding: 80px 18px 60px;
-
-      position: relative;
-    }
-
-    .invitation.show {
-      display: block;
-
-      animation:
-        invitationReveal
-        1.1s ease both;
-    }
-
-    @keyframes invitationReveal {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .container {
-      width: min(920px, 100%);
-      margin: auto;
-    }
-
-    .section-heading {
-      text-align: center;
-      margin-bottom: 35px;
-    }
-
-    .small-heading {
-      font-family:
-        "Cormorant Garamond",
-        serif;
-
-      font-size: 1.1rem;
-
-      letter-spacing: 4px;
-
-      color: var(--gold);
-
-      text-transform: uppercase;
-    }
-
-    .main-heading {
-      margin-top: 8px;
-
-      font-size:
-        clamp(
-          1rem,
-          3vw,
-          2rem
-        );
-
-      color: var(--brown);
-    }
-
-    .heading-line {
-      width: 75px;
-      height: 2px;
-
-      margin: 14px auto 0;
-
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          var(--gold),
-          transparent
-        );
-    }
-
-    .welcome-text {
-      max-width: 650px;
-
-      margin:
-        0 auto 40px;
-
-      text-align: center;
-
-      font-size: 1.1rem;
-
-      line-height: 2;
-
-      color: var(--brown-2);
-    }
-
-
-    /* =========================================================
-       COUNTDOWN
-    ========================================================= */
-
-    .countdown-wrapper {
-      margin:
-        35px auto 55px;
-    }
-
-    .countdown {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      max-width: 100%;
-      margin: auto;
-    }
-
-    .time-box {
-      padding: 14px 8px;
-      border: 0.4px solid var(--gold);
-      border-radius: 16px;
-      background: rgba(255,255,255,0.85);
-      box-shadow: 
-        0 10px 30px rgba(109,81,75,0.07),
-        inset 0 0 0 1px var(--gold-light);
-      backdrop-filter: blur(10px);
-      text-align: center;
-      min-width: 0;
-    }
-
-    .time-number {
-      display: block;
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(1.5rem, 5vw, 2.2rem);
-      font-weight: 700;
-      color: var(--brown);
-      line-height: 1;
-    }
-
-    .time-label {
-      font-size: 0.75rem;
-      color: var(--brown-light);
-      margin-top: 5px;
-      display: block;
-    }
-
-    .after-event {
-      display: none;
-
-      text-align: center;
-
-      padding: 30px 20px;
-
-      border:
-        1px solid
-        var(--gold-light);
-
-      border-radius: 24px;
-
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255,255,255,0.9),
-          rgba(247,233,225,0.65)
-        );
-    }
-
-    .after-event.show {
-      display: block;
-
-      animation:
-        fadeUp 0.8s ease;
-    }
-
-    .after-event-cap {
-      font-size: 2.4rem;
-    }
-
-    .after-event-title {
-      margin-top: 8px;
-
-      font-size: 1.5rem;
-
-      font-weight: 700;
-    }
-
-    .after-event-text {
-      margin-top: 7px;
-
-      color: var(--brown-2);
-    }
-
-
-    /* =========================================================
-       DETAILS CARD
-    ========================================================= */
-
-    .details-card {
-      position: relative;
-
-      padding: 40px 25px;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius:
-        var(--radius);
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(255,255,255,0.86),
-          rgba(255,250,246,0.78)
-        );
-
-      box-shadow:
-        var(--shadow-card);
-
-      overflow: hidden;
-    }
-
-    .details-card::before {
-      content: "";
-
-      position: absolute;
-
-      top: -80px;
-      right: -80px;
-
-      width: 180px;
-      height: 180px;
-
-      border-radius: 50%;
-
-      background:
-        rgba(232,191,196,0.20);
-    }
-
-    .details-card::after {
-      content: "";
-
-      position: absolute;
-
-      bottom: -80px;
-      left: -80px;
-
-      width: 180px;
-      height: 180px;
-
-      border-radius: 50%;
-
-      background:
-        rgba(234,216,184,0.20);
-    }
-
-    .detail-grid {
-      position: relative;
-
-      z-index: 2;
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(2, 1fr);
-
-      gap: 18px;
-    }
-
-    .detail-item {
-      padding: 20px 15px;
-
-      text-align: center;
-
-      border:
-        1px solid
-        rgba(234,217,209,0.8);
-
-      border-radius: 20px;
-
-      background:
-        rgba(255,255,255,0.58);
-
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-    }
-
-    .detail-item:hover {
-      transform: translateY(-3px);
-
-      box-shadow:
-        0 10px 25px
-        rgba(109,81,75,0.07);
-    }
-
-    .detail-icon {
-      font-size: 1.5rem;
-      margin-bottom: 7px;
-    }
-
-    .detail-label {
-      display: block;
-
-      color: var(--brown-light);
-
-      font-size: 0.82rem;
-
-      margin-bottom: 4px;
-    }
-
-    .detail-value {
-      font-weight: 700;
-
-      color: var(--brown);
-
-      line-height: 1.8;
-    }
-
-
-    /* =========================================================
-       ACTION BUTTONS
-    ========================================================= */
-
-    .actions {
-      display: flex;
-
-      flex-wrap: wrap;
-
-      justify-content: center;
-
-      gap: 11px;
-
-      margin:    
-        25px auto 55px;
-    }
-
-    .action-button {
-      display: inline-flex;
-
-      align-items: center;
-      justify-content: center;
-
-      gap: 7px;
-
-      min-width: 145px;
-
-      padding: 11px 18px;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius: 999px;
-
-      background:
-        rgba(255,255,255,0.78);
-
-      color: var(--brown);
-
-      font-size: 0.95rem;
-
-      font-weight: 700;
-
-      box-shadow:
-        0 7px 20px
-        rgba(109,81,75,0.07);
-
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
-    }
-
-    .action-button:hover {
-      transform: translateY(-3px);
-
-      border-color:
-        var(--pink-dark);
-
-      box-shadow:
-        0 12px 25px
-        rgba(109,81,75,0.11);
-    }
-
-    .action-button.primary {
-      background:
-        linear-gradient(
-          135deg,
-          var(--pink-2),
-          #f7e8e7
-        );
-    }
-
-
-    /* =========================================================
-       GRADUATE MESSAGE CARD
-    ========================================================= */
-
-    .graduate-detail {
-      grid-column: 1 / -1;
-      padding: 20px 18px;
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255,255,255,0.88),
-          rgba(249,229,225,0.58)
-        );
-      border: 1px solid var(--gold-light);
-      border-radius: 20px;
-    }
-
-    .graduate-message {
-      text-align: center;
-    }
-
-    .graduate-message-title {
-      display: block;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--brown);
-      line-height: 1.7;
-    }
-
-    .graduate-message-subtitle {
-      display: block;
-      margin-top: 2px;
-      font-size: 0.82rem;
-      color: var(--gold);
-      line-height: 1.6;
-    }
-
-    .graduate-message p {
-      margin: 9px auto 0;
-      font-size: 0.92rem;
-      line-height: 1.9;
-      color: var(--brown-2);
-    }
-
-
-    /* =========================================================
-       FOOTER
-    ========================================================= */
-
-    footer {
-      margin-top: 40px;
-
-      padding:
-        45px 20px 35px;
-
-      text-align: center;
-
-      border-top:
-        1px solid
-        var(--line);
-
-      background:
-        rgba(255,255,255,0.45);
-    }
-
-    .footer-cap {
-      font-size: 2rem;
-
-      animation:
-        capFloat
-        3.5s
-        ease-in-out infinite;
-    }
-
-    .footer-message {
-      margin-top: 10px;
-
-      font-size: 1.1rem;
-
-      line-height: 2;
-
-      color: var(--brown-2);
-    }
-
-    .footer-name {
-      margin-top: 15px;
-
-      font-family:
-        "Dancing Script",
-        cursive;
-
-      font-size: 1.5rem;
-
-      color: var(--brown);
-    }
-
-    .footer-class {
-      margin-top: 5px;
-
-      font-family:
-        "Cormorant Garamond",
-        serif;
-
-      letter-spacing: 3px;
-
-      color: var(--gold);
-
-      font-weight: 500;
-    }
-
-    .footer-class strong {
-      font-weight: 700 !important;
-      font-size: 1.4em;
-      color: var(--gold);
-      letter-spacing: 1px;
-    }
-
-
-    /* =========================================================
-       BACK TO TOP
-    ======================================================== */
-
-    .back-to-top {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      z-index: 500;
-      width: 48px;
-      height: 48px;
-      display: grid;
-      place-items: center;
-      border: 1px solid var(--line);
-      border-radius: 50%;
-      background: rgba(255,250,246,0.92);
-      color: var(--brown);
-      font-size: 1.2rem;
-      box-shadow: 0 10px 30px rgba(109,81,75,0.15);
-      backdrop-filter: blur(10px);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(12px);
-      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-    }
-
-    .back-to-top.show {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .back-to-top:hover {
-      transform: translateY(-3px);
-    }
-
-
-    /* =========================================================
-       MUSIC BUTTON
-    ========================================================= */
-
-    .music-button {
-      position: fixed;
-
-      bottom: 20px;
-      left: 20px;
-
-      z-index: 500;
-
-      width: 52px;
-      height: 52px;
-
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius: 50%;
-
-      background:
-        rgba(255,250,246,0.92);
-
-      color: var(--brown);
-
-      font-size: 1.2rem;
-
-      box-shadow:
-        0 10px 30px
-        rgba(109,81,75,0.15);
-
-      backdrop-filter:
-        blur(10px);
-
-      transition:
-        transform 0.3s ease;
-    }
-
-    .music-button:hover {
-      transform: translateY(-3px);
-    }
-
-    .music-button.playing {
-      animation:
-        musicPulse
-        1.8s
-        ease-in-out infinite;
-    }
-
-    @keyframes musicPulse {
-      0%,
-      100% {
-        box-shadow:
-          0 10px 30px
-          rgba(109,81,75,0.15);
-      }
-
-      50% {
-        box-shadow:
-          0 10px 35px
-          rgba(207,149,159,0.35);
-      }
-    }
-
-
-    /* =========================================================
-       MUSIC PROMPT
-    ========================================================= */
-
-    .music-prompt {
-      position: fixed;
-
-      left: 50%;
-      bottom: 28px;
-
-      transform:
-        translateX(-50%)
-        translateY(30px);
-
-      z-index: 800;
-
-      width:
-        min(
-          370px,
-          calc(100% - 35px)
-        );
-
-      padding: 15px 17px;
-
-      display: flex;
-
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 12px;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius: 20px;
-
-      background:
-        rgba(255,250,246,0.97);
-
-      box-shadow:
-        0 20px 50px
-        rgba(109,81,75,0.18);
-
-      backdrop-filter:
-        blur(14px);
-
-      opacity: 0;
-
-      transition:
-        opacity 0.5s ease,
-        transform 0.5s ease;
-    }
-
-    .music-prompt.show {
-      opacity: 1;
-
-      transform:
-        translateX(-50%)
-        translateY(0);
-    }
-
-    .music-prompt-text {
-      font-size: 0.95rem;
-      color: var(--brown);
-    }
-
-    .music-prompt-actions {
-      display: flex;
-
-      gap: 7px;
-
-      flex-shrink: 0;
-    }
-
-    .music-choice {
-      padding: 7px 12px;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius: 999px;
-
-      background: white;
-
-      color: var(--brown);
-
-      font-size: 0.82rem;
-
-      font-weight: 700;
-
-      transition:
-        transform 0.2s ease;
-    }
-
-    .music-choice:hover {
-      transform: translateY(-1px);
-    }
-
-    .music-choice.yes {
-      background:
-        var(--pink-2);
-    }
-
-
-    /* =========================================================
-       MODAL
-    ========================================================= */
-
-    .modal {
-      position: fixed;
-
-      inset: 0;
-
-      z-index: 9000;
-
-      display: none;
-
-      align-items: center;
-      justify-content: center;
-
-      padding: 20px;
-
-      background:
-        rgba(70,50,46,0.35);
-
-      backdrop-filter:
-        blur(7px);
-    }
-
-    .modal.show {
-      display: flex;
-
-      animation:
-        fadeIn 0.3s ease;
-    }
-
-    .modal-card {
-      width:
-        min(
-          480px,
-          100%
-        );
-
-      padding:
-        30px 24px;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius: 28px;
-
-      background:
-        linear-gradient(
-          145deg,
-          #fffaf7,
-          #fff
-        );
-
-      box-shadow:
-        0 30px 80px
-        rgba(60,40,36,0.20);
-
-      animation:
-        modalUp 0.4s ease;
-    }
-
-    .modal-close {
-      float: left;
-
-      width: 34px;
-      height: 34px;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius: 50%;
-
-      background: white;
-
-      color: var(--brown);
-
-      font-size: 1rem;
-    }
-
-    .modal-title {
-      clear: both;
-
-      padding-top: 10px;
-
-      font-size: 1.55rem;
-
-      text-align: center;
-    }
-
-    .modal-subtitle {
-      margin-top: 6px;
-
-      text-align: center;
-
-      color: var(--brown-light);
-
-      font-size: 0.9rem;
-    }
-
-    .message-form {
-      margin-top: 25px;
-    }
-
-    .form-label {
-      display: block;
-
-      margin-bottom: 7px;
-
-      font-size: 0.9rem;
-
-      color: var(--brown-2);
-    }
-
-    .form-input,
-    .form-textarea {
-      width: 100%;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius: 15px;
-
-      background: #fffdfb;
-
-      padding: 11px 13px;
-
-      color: var(--brown);
-
-      outline: none;
-
-      transition:
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
-    }
-
-    .form-input:focus,
-    .form-textarea:focus {
-      border-color:
-        var(--pink-dark);
-
-      box-shadow:
-        0 0 0 4px
-        rgba(232,191,196,0.18);
-    }
-
-    .form-textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    .form-group + .form-group {
-      margin-top: 15px;
-    }
-
-    .send-message {
-      width: 100%;
-
-      margin-top: 18px;
-
-      padding: 12px;
-
-      border: 0;
-
-      border-radius: 999px;
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--pink),
-          var(--pink-2)
-        );
-
-      color: var(--brown);
-
-      font-weight: 700;
-
-      transition:
-        transform 0.3s ease;
-    }
-
-    .send-message:hover {
-      transform: translateY(-2px);
-    }
-
-    .form-status {
-      min-height: 25px;
-
-      margin-top: 10px;
-
-      text-align: center;
-
-      font-size: 0.85rem;
-
-      color: var(--brown-2);
-    }
-
-    @keyframes modalUp {
-      from {
-        opacity: 0;
-        transform:
-          translateY(25px)
-          scale(0.97);
-      }
-
-      to {
-        opacity: 1;
-        transform:
-          translateY(0)
-          scale(1);
-      }
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-
-    /* =========================================================
-       SCROLL REVEAL - كل عنصر مستقل
-    ========================================================= */
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(35px);
-      filter: blur(2px);
-      transition:
-        opacity 0.8s ease,
-        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-        filter 0.8s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-      filter: blur(0);
-    }
-
-    /* حركات مستقلة لكل عنصر */
-    .reveal-up {
-      transform: translateY(50px);
-    }
-
-    .reveal-scale {
-      transform: scale(0.9);
-    }
-
-    /* تفعيل الحركات */
-    .reveal-up.visible {
-      transform: translateY(0);
-    }
-
-    .reveal-scale.visible {
-      transform: scale(1);
-    }
-
-
-    /* =========================================================
-   HERO REVEAL - يبدأ بعد انتهاء الـLOADING
-========================================================= */
-
-
-/* قبل انتهاء الـLoading: كل الأسطر مخفية */
-
-.hero-line {
-  opacity: 0;
-  transform: translateY(28px);
-  filter: blur(3px);
-}
-
-
-/* الظرف أيضًا مخفي */
-
-.hero-envelope {
-  opacity: 0;
-  transform: translateY(35px);
-  filter: blur(3px);
-}
-
-
-/* =========================================================
-   يبدأ الظهور فقط بعد انتهاء الـLOADING
-========================================================= */
-
-.hero.hero-started .hero-line {
-  animation:
-    heroLineReveal
-    0.8s
-    cubic-bezier(0.22, 1, 0.36, 1)
-    forwards;
-}
-
-
-/* =========================================================
-   ترتيب ظهور كل سطر
-========================================================= */
-
-
-/* 1 - البسملة */
-
-.hero.hero-started .hero-bismillah {
-  animation-delay: 0.15s;
-}
-
-
-/* 2 - يتشرف */
-
-.hero.hero-started .hero-honor {
-  animation-delay: 0.40s;
-}
-
-
-/* 3 - اسم الوالد */
-
-.hero.hero-started .hero-father-name {
-  animation-delay: 0.65s;
-}
-
-
-/* 4 - الدعوة */
-
-.hero.hero-started .hero-invitation-text {
-  animation-delay: 0.90s;
-}
-
-
-/* 5 - اسم لُجين */
-
-.hero.hero-started .hero-graduate {
-  animation-delay: 1.20s;
-}
-
-
-/* 6 - الجامعة */
-
-.hero.hero-started .university-main {
-  animation-delay: 1.50s;
-}
-
-
-/* 7 - الكلية */
-
-.hero.hero-started .university-secondary {
-  animation-delay: 1.75s;
-}
-
-
-/* 8 - التخصص */
-
-.hero.hero-started .major {
-  animation-delay: 2.00s;
-}
-
-
-/* 9 - JUST UNI | MLS */
-
-.hero.hero-started .uni-badge {
-  animation-delay: 2.25s;
-}
-
-
-/* 10 - شعار الجامعة */
-
-.hero.hero-started .just-logo {
-  animation:
-    heroLineReveal
-    0.8s
-    cubic-bezier(0.22, 1, 0.36, 1)
-    2.50s
-    forwards;
-}
-
-
-/* 10 - العبارة */
-
-.hero.hero-started .quote {
-  animation-delay: 2.80s;
-}
-
-
-/* 11 - الظرف */
-
-.hero.hero-started .hero-envelope {
-  animation:
-    heroLineReveal
-    0.9s
-    cubic-bezier(0.22, 1, 0.36, 1)
-    3.10s
-    forwards;
-}
-
-
-/* =========================================================
-   حركة الظهور
-========================================================= */
-
-@keyframes heroLineReveal {
-
-  from {
-    opacity: 0;
-    transform: translateY(28px);
-    filter: blur(3px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-  }
-}
-
-/* =========================================================
-   HERO - المسافات والألوان النهائية
-========================================================= */
-
-/* كل سطر مستقل */
-
-.hero .hero-line {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* =========================================================
-   1 - البسملة
-========================================================= */
-
-.hero .hero-bismillah {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-/* =========================================================
-   2 - يتشرف
-========================================================= */
-
-.hero .hero-honor {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.hero .hero-father-name {
-  margin-top: 0;
-  margin-bottom: 14px;
-  color: var(--brown);
-  font-weight: 700;
-}
-
-/* =========================================================
-   3 - جملة الدعوة
-========================================================= */
-
-.hero .hero-invitation-text {
-  margin-top: 0;
-  margin-bottom: 28px;
-}
-
-/* =========================================================
-   4 - اسم لُجين
-========================================================= */
-
-    .hero .hero-graduate {
-      display: inline-block;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-.hero .hero-graduate .graduate-name {
-  color: var(--brown);
-  font-weight: 700;
-}
-
-/* =========================================================
-   6 - الجامعة
-========================================================= */
-
-.hero .university-main {
-  margin-top: 40px;
-  margin-bottom: 16px;
-}
-
-/* =========================================================
-   7 - الكلية
-========================================================= */
-
-.hero .university-secondary {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-/* =========================================================
-   8 - التخصص
-========================================================= */
-
-.hero .major {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-/* =========================================================
-   9 - JUST UNI | MLS
-========================================================= */
-
-.hero .uni-badge {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-/* =========================================================
-   10 - شعار الجامعة
-========================================================= */
-
-.hero .just-logo {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-/* =========================================================
-   11 - العبارة
-========================================================= */
-
-.hero .quote {
-  margin-top: 0;
-  margin-bottom: 35px;
-}
-
-/* =========================================================
-   12 - الظرف
-========================================================= */
-
-.hero .hero-envelope {
-  margin-top: 0;
-}
-    
-    /* =========================================================
-       RESPONSIVE
-    ========================================================= */
-
-    @media (max-width: 700px) {
-
-      .hero {
-        padding-top: 35px;
-      }
-
-      .name-cap {
-        top: -25px;
-        right: -20px;
-      }
-
-      .detail-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .countdown {
-        gap: 8px;
-      }
-
-      .time-box {
-        padding: 15px 7px;
-      }
-
-      .actions {
-        gap: 8px;
-      }
-
-      .action-button {
-        min-width: 135px;
-      }
-    }
-
-
-    @media (max-width: 460px) {
-
-      .hero {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-
-      .graduate-name {
-        font-size: 2.5rem;
-      }
-
-      .name-cap {
-        font-size: 1.35rem;
-        right: -25px;
-        top: -30px;
-      }
-
-      .university-main {
-        font-size: 1rem;
-      }
-
-      .envelope {
-        height: 235px;
-      }
-
-      .actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .action-button {
-        width: 100%;
-      }
-
-      .music-prompt {
-        bottom: 82px;
-
-        flex-direction: column;
-
-        align-items: stretch;
-
-        text-align: center;
-      }
-
-      .music-prompt-actions {
-        justify-content: center;
-      }
-
-      .music-button {
-        bottom: 18px;
-        left: 18px;
-      }
-
-      .back-to-top {
-        right: 18px;
-        bottom: 18px;
-      }
-    }
-
-
-    /* =========================================================
-       REDUCED MOTION
-    ========================================================= */
-
-    @media (prefers-reduced-motion: reduce) {
-
-      *,
-      *::before,
-      *::after {
-        animation-duration: 0.01ms !important;
-
-        animation-iteration-count:
-          1 !important;
-
-        scroll-behavior: auto !important;
-
-        transition-duration:
-          0.01ms !important;
-      }
-    }
-
-
-
-    /* =========================================================
-       REALISTIC STATIONERY EDITION
-       A photographed-paper mood inspired by the invitation reference.
-    ========================================================= */
-    body {
-      background:
-        radial-gradient(circle at 12% 8%, rgba(255,255,255,.72), transparent 28%),
-        linear-gradient(135deg, #cbbab0 0%, #e7d9d0 48%, #bfa99e 100%);
-      padding: 22px 14px 44px;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: -3;
-      opacity: .22;
-      background-image:
-        radial-gradient(rgba(109,81,75,.18) .6px, transparent .7px);
-      background-size: 7px 7px;
-      mix-blend-mode: multiply;
-    }
-
-    .hero {
-      width: min(1180px, 100%);
-      min-height: calc(100vh - 66px);
-      margin: 0 auto;
-      padding: 46px 24px 64px;
-      border: 1px solid rgba(255,255,255,.75);
-      border-radius: 5px;
-      overflow: hidden;
-      background:
-        linear-gradient(rgba(255,250,246,.37), rgba(255,250,246,.45)),
-        url("stationery-flatlay.webp") center / cover no-repeat;
-      box-shadow:
-        0 24px 70px rgba(77,55,48,.26),
-        0 2px 0 rgba(255,255,255,.85) inset;
-    }
-
-    .hero::before,
-    .invitation::before {
-      content: "";
-      position: absolute;
-      inset: 16px;
-      pointer-events: none;
-      border: 1px solid rgba(199,163,106,.42);
-      box-shadow: 0 0 0 6px rgba(255,255,255,.10);
-    }
-
-    .hero-inner {
-      position: relative;
-      z-index: 2;
-      width: min(690px, 100%);
-      padding: 30px 24px 34px;
-      margin: 0 auto;
-      border: 1px solid rgba(199,163,106,.28);
-      background: rgba(255,250,246,.32);
-      box-shadow: 0 14px 38px rgba(109,81,75,.08);
-      backdrop-filter: blur(1.5px);
-    }
-
-    .hero-line,
-    .bismillah,
-    .quote,
-    .father-invitation {
-      text-shadow: 0 1px 0 rgba(255,255,255,.75);
-    }
-
-    .envelope {
-      border-radius: 4px;
-      border: 1px solid rgba(164,112,105,.24);
-      background:
-        linear-gradient(145deg, rgba(255,255,255,.18), transparent 55%),
-        linear-gradient(145deg, #f0cfd0, #dca9ae);
-      box-shadow:
-        0 24px 38px rgba(109,81,75,.25),
-        0 1px 0 rgba(255,255,255,.8) inset;
-    }
-
-    .envelope-hint {
-      color: #8b6b63;
-      font-style: italic;
-    }
-
-    .invitation {
-      width: min(1180px, 100%);
-      margin: 24px auto 0;
-      padding: 82px 28px 55px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,.75);
-      border-radius: 5px;
-      background:
-        linear-gradient(rgba(255,250,246,.66), rgba(255,250,246,.72)),
-        url("stationery-flatlay.webp") center / cover fixed no-repeat;
-      box-shadow:
-        0 24px 70px rgba(77,55,48,.22),
-        0 2px 0 rgba(255,255,255,.85) inset;
-    }
-
-    .invitation .container {
-      position: relative;
-      z-index: 2;
-      width: min(920px, 100%);
-      padding: 34px 26px 42px;
-      border: 1px solid rgba(199,163,106,.30);
-      background: rgba(255,250,246,.52);
-      box-shadow: 0 14px 38px rgba(109,81,75,.08);
-      backdrop-filter: blur(2px);
-    }
-
-    .details-card,
-    .time-box,
-    .after-event,
-    .graduate-detail,
-    .detail-item {
-      border-radius: 4px;
-    }
-
-    .details-card {
-      background: rgba(255,250,246,.67);
-      box-shadow: 0 18px 45px rgba(109,81,75,.10);
-    }
-
-    .time-box,
-    .detail-item {
-      background: rgba(255,255,255,.52);
-    }
-
-    .actions {
-      position: relative;
-      z-index: 2;
-    }
-
-    footer {
-      position: relative;
-      z-index: 2;
-      background: rgba(255,250,246,.38);
-    }
-
-    @media (max-width: 640px) {
-      body { padding: 0 0 28px; }
-      .hero {
-        min-height: 100vh;
-        border-radius: 0;
-        padding: 28px 12px 50px;
-      }
-      .hero::before,
-      .invitation::before { inset: 9px; }
-      .hero-inner {
-        padding: 23px 13px 28px;
-        background: rgba(255,250,246,.46);
-      }
-      .invitation {
-        margin-top: 14px;
-        border-radius: 0;
-        padding: 58px 12px 34px;
-      }
-      .invitation .container {
-        padding: 24px 12px 30px;
-      }
-    }
-
-
-
-    /* =========================================================
-       MOBILE ENVELOPE CORRECTION
-    ========================================================= */
-    @media (max-width: 640px) {
-      .hero {
-        width: 100%;
-        padding: 24px 10px 48px;
-        background-position: center top;
-      }
-
-      .hero-inner {
-        width: min(100%, 360px);
-        padding: 22px 10px 28px;
-        background: rgba(255,250,246,.58);
-      }
-
-      .hero-envelope {
-        width: 100%;
-        margin: 30px auto 0;
-      }
-
-      .envelope {
-        width: min(330px, calc(100vw - 58px));
-        height: 214px;
-        margin: 0 auto;
-        box-shadow:
-          0 22px 34px rgba(109,81,75,.25),
-          0 1px 0 rgba(255,255,255,.85) inset;
-      }
-
-      .open-invitation {
-        width: calc(100% - 28px);
-        bottom: 14px;
-        padding: 10px 14px;
-        font-size: .94rem;
-      }
-
-      .envelope-hint {
-        margin-top: 13px;
-        font-size: .86rem;
-      }
-
-      .hero .quote {
-        margin-top: 18px;
-        font-size: 1.05rem;
-      }
-    }
-
-
-
-    /* =========================================================
-       TRANSPARENT STATIONERY LAYER
-    ========================================================= */
-    .hero {
-      background:
-        linear-gradient(rgba(255,250,246,.12), rgba(255,250,246,.18)),
-        url("stationery-flatlay.webp") center / cover no-repeat;
-    }
-
-    .hero-inner {
-      background: rgba(255,250,246,.18);
-      border-color: rgba(199,163,106,.22);
-      box-shadow: 0 12px 30px rgba(109,81,75,.045);
-      backdrop-filter: blur(.6px);
-    }
-
-    .invitation {
-      background:
-        linear-gradient(rgba(255,250,246,.42), rgba(255,250,246,.50)),
-        url("stationery-flatlay.webp") center / cover fixed no-repeat;
-    }
-
-    .invitation .container {
-      background: rgba(255,250,246,.34);
-      box-shadow: 0 12px 30px rgba(109,81,75,.055);
-      backdrop-filter: blur(1px);
-    }
-
-    .hero-line,
-    .bismillah,
-    .quote,
-    .father-invitation {
-      text-shadow:
-        0 1px 0 rgba(255,255,255,.92),
-        0 2px 10px rgba(255,250,246,.32);
-    }
-
-    @media (max-width: 640px) {
-      .hero-inner {
-        background: rgba(255,250,246,.22);
-      }
-    }
-
-
-
-    /* =========================================================
-       FOREGROUND BOTANICAL LAYER
-    ========================================================= */
-    .petals,
-    .butterflies {
-      z-index: 6;
-      pointer-events: none;
-    }
-
-    .hero-inner,
-    .invitation .container {
-      z-index: 7;
-    }
-
-    /* الصفحة الأولى: ورق أخف حتى تظهر القرطاسية من خلفها */
-    .hero {
-      background:
-        linear-gradient(rgba(255,250,246,.055), rgba(255,250,246,.09)),
-        url("stationery-flatlay.webp") center / cover no-repeat;
-    }
-
-    .hero-inner {
-      background: rgba(255,250,246,.085);
-      backdrop-filter: blur(.25px);
-      box-shadow: 0 10px 26px rgba(109,81,75,.035);
-    }
-
-    /* الفراشات والبتلات فوق الورق، والنص يبقى فوقها */
-    .butterfly,
-    .petal {
-      opacity: .52;
-    }
-
-    .hero-line,
-    .bismillah,
-    .quote,
-    .father-invitation {
-      position: relative;
-      z-index: 8;
-    }
-
-    @media (max-width: 640px) {
-      .hero-inner {
-        background: rgba(255,250,246,.12);
-      }
-    }
-
-
-
-    /* =========================================================
-       REALISTIC ENVELOPE + RESPONSIVE EDITION
-    ========================================================= */
-    .loading-screen {
+      position: fixed; inset: 0; z-index: 99999;
+      display: flex; align-items: center; justify-content: center;
       background:
         linear-gradient(rgba(255,250,246,.48), rgba(255,250,246,.58)),
         url("stationery-flatlay.webp") center / cover no-repeat;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
     }
-
+    .loading-screen.hide { opacity: 0; visibility: hidden; pointer-events: none; }
     .loading-content {
+      text-align: center;
       padding: 30px 24px 26px;
       border: 1px solid rgba(199,163,106,.28);
       border-radius: 6px;
       background: rgba(255,250,246,.64);
       box-shadow: 0 18px 55px rgba(109,81,75,.14);
       backdrop-filter: blur(2px);
+      display: flex; flex-direction: column; align-items: center;
     }
+    .loading-cap { font-size: 3rem; animation: loadingFloat 2s ease-in-out infinite; }
+    .loading-name { margin-top: 12px; font-family: "Dancing Script", cursive; font-size: 2.4rem; color: var(--brown); }
+    .loading-line { width: 90px; height: 2px; margin: 15px auto; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+    .loading-text { font-size: 0.95rem; color: var(--brown-light); }
+
+    .loading-music-prompt {
+      margin: 28px auto 0; width: min(330px, 100%);
+      padding: 16px 18px; border: 1px solid var(--line); border-radius: 20px;
+      background: rgba(255,250,246,0.94); box-shadow: 0 15px 40px rgba(109,81,75,0.13);
+      backdrop-filter: blur(12px); opacity: 0; transform: translateY(12px);
+      animation: loadingMusicAppear 0.7s ease 0.5s forwards;
+      text-align: center; direction: rtl;
+    }
+    .loading-music-text { font-size: 0.95rem; color: var(--brown); margin-bottom: 12px; width: 100%; text-align: center; }
+    .loading-music-actions { display: flex; justify-content: center; gap: 8px; width: 100%; }
+    .loading-music-choice {
+      min-width: 85px; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px;
+      background: #ffffff; color: var(--brown); font-size: 0.85rem; font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .loading-music-choice:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(109,81,75,0.10); }
+    .loading-music-choice.yes { background: var(--pink-2); border-color: var(--pink); }
+    @keyframes loadingMusicAppear { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes loadingFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+    /* Background */
+    .glow { position: fixed; width: 240px; height: 240px; border-radius: 50%; filter: blur(60px); pointer-events: none; z-index: -2; }
+    .glow-1 { top: 5%; right: -100px; background: rgba(232, 191, 196, 0.25); }
+    .glow-2 { bottom: 10%; left: -100px; background: rgba(234, 216, 184, 0.22); }
+
+    .petals, .butterflies { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 6; }
+    .petal {
+      position: absolute; top: -30px; width: 10px; height: 16px;
+      border-radius: 70% 30% 70% 30%; background: rgba(232, 191, 196, 0.55);
+      animation: petalFall linear infinite, petalSway ease-in-out infinite; opacity: .30;
+    }
+    @keyframes petalFall { from { transform: translateY(-40px) rotate(0deg); } to { transform: translateY(110vh) rotate(360deg); } }
+    @keyframes petalSway { 0%,100% { margin-left: 0; } 50% { margin-left: 35px; } }
+
+    .butterfly { position: absolute; font-size: 1.25rem; opacity: .38; animation: butterflyFloat 7s ease-in-out infinite; }
+    .butterfly:nth-child(1) { top: 19%; right: 7%; animation-delay: 1s; }
+    .butterfly:nth-child(2) { top: 52%; left: 6%; animation-delay: 3s; font-size: 1rem; }
+    .butterfly:nth-child(3), .butterfly.extra-left, .butterfly.super-center { display: none; }
+    @keyframes butterflyFloat { 0%,100% { transform: translate(0,0) rotate(-4deg); } 50% { transform: translate(12px,-18px) rotate(5deg); } }
+
+    /* Hero */
+    .hero {
+      width: min(1180px, 100%); min-height: calc(100vh - 66px); margin: 0 auto;
+      padding: 46px 24px 64px; border: 1px solid rgba(255,255,255,.75); border-radius: 5px;
+      overflow: hidden; position: relative;
+      display: flex; align-items: center; justify-content: center;
+      background:
+        linear-gradient(rgba(255,250,246,.055), rgba(255,250,246,.09)),
+        url("stationery-flatlay.webp") center / cover no-repeat;
+      box-shadow: 0 24px 70px rgba(77,55,48,.26), 0 2px 0 rgba(255,255,255,.85) inset;
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: 16px; pointer-events: none;
+      border: 1px solid rgba(199,163,106,.42); box-shadow: 0 0 0 6px rgba(255,255,255,.10);
+    }
+    .hero-inner {
+      position: relative; z-index: 7; width: min(690px, 100%);
+      padding: 30px 24px 34px; margin: 0 auto; text-align: center;
+      border: 1px solid rgba(199,163,106,.22); background: rgba(255,250,246,.085);
+      box-shadow: 0 10px 26px rgba(109,81,75,.035); backdrop-filter: blur(.25px);
+    }
+
+    .hero-line { display: block; margin-left: auto; margin-right: auto; opacity: 0; transform: translateY(28px); filter: blur(3px); position: relative; z-index: 8; }
+    .hero.hero-started .hero-line { animation: heroLineReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    @keyframes heroLineReveal { from { opacity: 0; transform: translateY(28px); filter: blur(3px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } }
+
+    .hero-bismillah { font-size: clamp(1.45rem, 4vw, 2.1rem); color: var(--brown-2); margin-bottom: 30px; }
+    .hero-honor { font-size: clamp(1rem, 3vw, 1.3rem); color: var(--brown-2); margin-bottom: 10px; }
+    .hero-father-name { font-size: clamp(1.1rem, 3.5vw, 1.5rem); color: var(--brown); font-weight: 700; margin-bottom: 14px; }
+    .hero-invitation-text { font-size: clamp(1rem, 3vw, 1.3rem); color: var(--brown-2); margin-bottom: 28px; }
+
+    .graduate-name-wrapper { position: relative; display: inline-block; margin-top: 0; }
+    .graduate-name {
+      position: relative; display: inline-block; font-size: clamp(3.5rem, 12vw, 6.5rem);
+      line-height: 1; font-weight: 700; color: var(--brown);
+      text-shadow: 0 2px 0 rgba(255,255,255,0.8), 0 12px 30px rgba(109,81,75,0.12);
+    }
+    .graduate-name::after {
+      content: ""; position: absolute; left: 12%; right: 12%; bottom: -10px; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .name-cap {
+      position: absolute; z-index: 4; pointer-events: none; white-space: nowrap;
+      top: -40px; right: -45px; font-size: clamp(1.8rem, 6vw, 3rem);
+      filter: drop-shadow(0 6px 8px rgba(109,81,75,0.12));
+      animation: capFloat 3.5s ease-in-out infinite; transform-origin: center;
+    }
+    @keyframes capFloat { 0%,100% { transform: translateY(0) rotate(5deg); } 50% { transform: translateY(-10px) rotate(-4deg); } }
+
+    .university-main { font-size: clamp(1rem, 3vw, 1.25rem); font-weight: 700; margin-top: 40px; margin-bottom: 16px; }
+    .university-secondary { font-size: 0.98rem; margin-bottom: 16px; }
+    .major { font-size: 1rem; color: var(--brown); margin-bottom: 20px; }
+    .uni-badge {
+      margin-top: 0; margin-bottom: 20px; padding: 7px 17px; display: inline-block;
+      border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,0.65);
+      font-family: "Cormorant Garamond", serif; font-weight: 700; letter-spacing: 2px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    img.just-logo {
+      width: 72px; height: 72px; margin-top: 0; margin-bottom: 30px; padding: 0;
+      display: block; margin-left: auto; margin-right: auto; border: 0; border-radius: 0;
+      background: transparent; box-shadow: none; object-fit: contain;
+      filter: drop-shadow(0 5px 12px rgba(109,81,75,.12));
+    }
+
+    .quote {
+      max-width: 720px; margin: 0 auto 35px; font-size: clamp(1.15rem, 3.5vw, 1.65rem);
+      line-height: 2; color: var(--brown);
+    }
+    .quote::before, .quote::after { color: var(--gold); font-family: Georgia, serif; font-size: 2rem; }
+    .quote::before { content: "“"; margin-left: 5px; }
+    .quote::after { content: "”"; margin-right: 5px; }
+
+    /* =========================================================
+       ENVELOPE - مندمج مع الخلفية
+    ========================================================= */
+    .envelope-section { margin-top: 0; }
+    .hero-envelope { opacity: 0; transform: translateY(35px); filter: blur(3px); }
+    .hero.hero-started .hero-envelope { animation: heroLineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 1.64s forwards; }
 
     .envelope {
-      height: auto;
-      aspect-ratio: 3 / 2;
-      background: #f4ebe4;
-      box-shadow: 0 24px 44px rgba(109,81,75,.24);
+      position: relative; width: min(470px, 70vw); margin: 0 auto;
+      background: transparent; border: none; box-shadow: none;
+      aspect-ratio: 16 / 9; overflow: visible; perspective: 1000px;
+      transition: transform 0.4s ease;
     }
+    .envelope:hover { transform: translateY(-3px); }
+    .envelope::before, .envelope::after { display: none; }
+
+    .envelope-video {
+      position: absolute; inset: 0; z-index: 2; display: block;
+      width: 100%; height: 100%; object-fit: cover; background: transparent;
+      mask-image: radial-gradient(ellipse 85% 80% at center, black 50%, transparent 95%);
+      -webkit-mask-image: radial-gradient(ellipse 85% 80% at center, black 50%, transparent 95%);
+      box-shadow: inset 0 0 80px 40px rgba(251, 242, 235, 0.5);
+      border-radius: 12px; opacity: 0.92;
+    }
+    .envelope-video::-webkit-media-controls { display: none !important; }
 
     .open-invitation {
-      z-index: 12;
-      background: rgba(255,250,246,.94);
-      box-shadow: 0 8px 20px rgba(109,81,75,.15);
+      position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%);
+      background: rgba(255, 250, 246, 0.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(199, 163, 106, 0.35); border-radius: 999px;
+      box-shadow: 0 8px 25px rgba(109, 81, 75, 0.12), 0 2px 8px rgba(109, 81, 75, 0.08);
+      padding: 12px 28px; min-width: 200px; color: var(--brown); font-size: 1rem; font-weight: 700;
+      z-index: 12; transition: all 0.3s ease;
+    }
+    .open-invitation:hover {
+      background: rgba(255, 250, 246, 0.95); transform: translateX(-50%) translateY(-2px);
+      box-shadow: 0 12px 32px rgba(109, 81, 75, 0.18), 0 4px 12px rgba(109, 81, 75, 0.10);
+      border-color: rgba(199, 163, 106, 0.5);
+    }
+    .open-invitation:disabled { opacity: 0; pointer-events: none; transition: opacity 0.5s ease; }
+
+    .envelope-hint {
+      margin-top: 20px; color: var(--brown-light); font-size: 0.92rem;
+      text-align: center; opacity: 0.85; font-style: italic;
+      animation: softPulse 2.8s ease-in-out infinite;
+    }
+    @keyframes softPulse { 0%,100% { opacity: 0.55; } 50% { opacity: 0.9; } }
+
+    /* Invitation Main */
+    .invitation {
+      display: none; width: min(1180px, 100%); margin: 24px auto 0;
+      padding: 82px 28px 55px; overflow: hidden; position: relative;
+      border: 1px solid rgba(255,255,255,.75); border-radius: 5px;
+      background:
+        linear-gradient(rgba(255,250,246,.42), rgba(255,250,246,.50)),
+        url("stationery-flatlay.webp") center / cover fixed no-repeat;
+      box-shadow: 0 24px 70px rgba(77,55,48,.22), 0 2px 0 rgba(255,255,255,.85) inset;
+    }
+    .invitation.show { display: block; animation: invitationReveal 1.1s ease both; }
+    @keyframes invitationReveal { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+    .invitation::before {
+      content: ""; position: absolute; inset: 16px; pointer-events: none;
+      border: 1px solid rgba(199,163,106,.42); box-shadow: 0 0 0 6px rgba(255,255,255,.10);
+    }
+    .invitation .container {
+      position: relative; z-index: 2; width: min(920px, 100%); margin: auto;
+      padding: 34px 26px 42px; border: 1px solid rgba(199,163,106,.30);
+      background: rgba(255,250,246,.34); box-shadow: 0 12px 30px rgba(109,81,75,.055);
+      backdrop-filter: blur(1px);
     }
 
-    /* حركة أسرع: الاسم والظرف يظهران خلال أقل من ثانيتين */
+    .section-heading { text-align: center; margin-bottom: 35px; }
+    .small-heading { font-family: "Cormorant Garamond", serif; font-size: 1.1rem; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; }
+    .main-heading { margin-top: 8px; font-size: clamp(1rem, 3vw, 2rem); color: var(--brown); }
+    .heading-line { width: 75px; height: 2px; margin: 14px auto 0; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+    .welcome-text { max-width: 650px; margin: 0 auto 40px; text-align: center; font-size: 1.1rem; line-height: 2; color: var(--brown-2); }
+
+    /* Countdown */
+    .countdown-wrapper { margin: 35px auto 55px; }
+    .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; max-width: 100%; margin: auto; }
+    .time-box {
+      padding: 14px 8px; border: 0.4px solid var(--gold); border-radius: 16px;
+      background: rgba(255,255,255,0.52); box-shadow: 0 10px 30px rgba(109,81,75,0.07), inset 0 0 0 1px var(--gold-light);
+      backdrop-filter: blur(10px); text-align: center; min-width: 0;
+    }
+    .time-number { display: block; font-family: "Cormorant Garamond", serif; font-size: clamp(1.5rem, 5vw, 2.2rem); font-weight: 700; color: var(--brown); line-height: 1; }
+    .time-label { font-size: 0.75rem; color: var(--brown-light); margin-top: 5px; display: block; }
+
+    .after-event { display: none; text-align: center; padding: 30px 20px; border: 1px solid var(--gold-light); border-radius: 24px; background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(247,233,225,0.65)); }
+    .after-event.show { display: block; animation: fadeUp 0.8s ease; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .after-event-cap { font-size: 2.4rem; }
+    .after-event-title { margin-top: 8px; font-size: 1.5rem; font-weight: 700; }
+    .after-event-text { margin-top: 7px; color: var(--brown-2); }
+
+    /* Details */
+    .details-card {
+      position: relative; padding: 40px 25px; border: 1px solid var(--line); border-radius: 4px;
+      background: rgba(255,250,246,.67); box-shadow: 0 18px 45px rgba(109,81,75,.10); overflow: hidden;
+    }
+    .details-card::before { content: ""; position: absolute; top: -80px; right: -80px; width: 180px; height: 180px; border-radius: 50%; background: rgba(232,191,196,0.20); }
+    .details-card::after { content: ""; position: absolute; bottom: -80px; left: -80px; width: 180px; height: 180px; border-radius: 50%; background: rgba(234,216,184,0.20); }
+    .detail-grid { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .detail-item {
+      padding: 20px 15px; text-align: center; border: 1px solid rgba(234,217,209,0.8);
+      border-radius: 4px; background: rgba(255,255,255,0.52); transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .detail-item:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(109,81,75,0.07); }
+    .detail-icon { font-size: 1.5rem; margin-bottom: 7px; }
+    .detail-label { display: block; color: var(--brown-light); font-size: 0.82rem; margin-bottom: 4px; }
+    .detail-value { font-weight: 700; color: var(--brown); line-height: 1.8; }
+
+    .graduate-detail {
+      grid-column: 1 / -1; padding: 20px 18px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.88), rgba(249,229,225,0.58));
+      border: 1px solid var(--gold-light); border-radius: 4px;
+    }
+    .graduate-message { text-align: center; }
+    .graduate-message-title { display: block; font-size: 1rem; font-weight: 700; color: var(--brown); line-height: 1.7; }
+    .graduate-message-subtitle { display: block; margin-top: 2px; font-size: 0.82rem; color: var(--gold); line-height: 1.6; }
+    .graduate-message p { margin: 9px auto 0; font-size: 0.92rem; line-height: 1.9; color: var(--brown-2); }
+
+    /* Actions */
+    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 11px; margin: 25px auto 55px; position: relative; z-index: 2; }
+    .action-button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+      min-width: 145px; padding: 11px 18px; border: 1px solid var(--line); border-radius: 999px;
+      background: rgba(255,255,255,0.78); color: var(--brown); font-size: 0.95rem; font-weight: 700;
+      box-shadow: 0 7px 20px rgba(109,81,75,0.07); transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .action-button:hover { transform: translateY(-3px); border-color: var(--pink-dark); box-shadow: 0 12px 25px rgba(109,81,75,0.11); }
+    .action-button.primary { background: linear-gradient(135deg, var(--pink-2), #f7e8e7); }
+
+    /* Footer */
+    footer { margin-top: 40px; padding: 45px 20px 35px; text-align: center; border-top: 1px solid var(--line); background: rgba(255,250,246,.38); position: relative; z-index: 2; }
+    .footer-cap { font-size: 2rem; animation: capFloat 3.5s ease-in-out infinite; }
+    .footer-message { margin-top: 10px; font-size: 1.1rem; line-height: 2; color: var(--brown-2); }
+    .footer-name { margin-top: 15px; font-family: "Dancing Script", cursive; font-size: 1.5rem; color: var(--brown); }
+    .footer-class { margin-top: 5px; font-family: "Cormorant Garamond", serif; letter-spacing: 3px; color: var(--gold); font-weight: 500; }
+    .footer-class strong { font-weight: 700 !important; font-size: 1.4em; color: var(--gold); letter-spacing: 1px; }
+
+    /* Back to top & Music */
+    .back-to-top {
+      position: fixed; right: 20px; bottom: 20px; z-index: 500; width: 48px; height: 48px;
+      display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%;
+      background: rgba(255,250,246,0.92); color: var(--brown); font-size: 1.2rem;
+      box-shadow: 0 10px 30px rgba(109,81,75,0.15); backdrop-filter: blur(10px);
+      opacity: 0; visibility: hidden; transform: translateY(12px);
+      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    }
+    .back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+    .back-to-top:hover { transform: translateY(-3px); }
+
+    .music-button {
+      position: fixed; bottom: 20px; left: 20px; z-index: 500; width: 52px; height: 52px;
+      display: flex; align-items: center; justify-content: center; border: 1px solid var(--line);
+      border-radius: 50%; background: rgba(255,250,246,0.92); color: var(--brown); font-size: 1.2rem;
+      box-shadow: 0 10px 30px rgba(109,81,75,0.15); backdrop-filter: blur(10px); transition: transform 0.3s ease;
+    }
+    .music-button:hover { transform: translateY(-3px); }
+    .music-button.playing { animation: musicPulse 1.8s ease-in-out infinite; }
+    @keyframes musicPulse { 0%,100% { box-shadow: 0 10px 30px rgba(109,81,75,0.15); } 50% { box-shadow: 0 10px 35px rgba(207,149,159,0.35); } }
+
+    /* Modal */
+    .modal {
+      position: fixed; inset: 0; z-index: 9000; display: none; align-items: center; justify-content: center;
+      padding: 20px; background: rgba(70,50,46,0.35); backdrop-filter: blur(7px);
+    }
+    .modal.show { display: flex; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .modal-card {
+      width: min(480px, 100%); padding: 30px 24px; border: 1px solid var(--line); border-radius: 28px;
+      background: linear-gradient(145deg, #fffaf7, #fff); box-shadow: 0 30px 80px rgba(60,40,36,0.20);
+      animation: modalUp 0.4s ease;
+    }
+    @keyframes modalUp { from { opacity: 0; transform: translateY(25px) scale(0.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+    .modal-close { float: left; width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 50%; background: white; color: var(--brown); font-size: 1rem; }
+    .modal-title { clear: both; padding-top: 10px; font-size: 1.55rem; text-align: center; }
+    .modal-subtitle { margin-top: 6px; text-align: center; color: var(--brown-light); font-size: 0.9rem; }
+    .message-form { margin-top: 25px; }
+    .form-label { display: block; margin-bottom: 7px; font-size: 0.9rem; color: var(--brown-2); }
+    .form-input, .form-textarea {
+      width: 100%; border: 1px solid var(--line); border-radius: 15px; background: #fffdfb;
+      padding: 11px 13px; color: var(--brown); outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .form-input:focus, .form-textarea:focus { border-color: var(--pink-dark); box-shadow: 0 0 0 4px rgba(232,191,196,0.18); }
+    .form-textarea { min-height: 120px; resize: vertical; }
+    .form-group + .form-group { margin-top: 15px; }
+    .send-message {
+      width: 100%; margin-top: 18px; padding: 12px; border: 0; border-radius: 999px;
+      background: linear-gradient(135deg, var(--pink), var(--pink-2)); color: var(--brown);
+      font-weight: 700; transition: transform 0.3s ease;
+    }
+    .send-message:hover { transform: translateY(-2px); }
+    .form-status { min-height: 25px; margin-top: 10px; text-align: center; font-size: 0.85rem; color: var(--brown-2); }
+
+    /* Scroll Reveal */
+    .reveal { opacity: 0; transform: translateY(35px); filter: blur(2px); transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); filter: blur(0); }
+    .reveal-up { transform: translateY(50px); }
+    .reveal-up.visible { transform: translateY(0); }
+    .reveal-scale { transform: scale(0.9); }
+    .reveal-scale.visible { transform: scale(1); }
+
+    /* Hero reveal delays */
     .hero.hero-started .hero-bismillah { animation-delay: .05s; }
     .hero.hero-started .hero-honor { animation-delay: .18s; }
     .hero.hero-started .hero-father-name { animation-delay: .31s; }
@@ -2661,1799 +416,472 @@
     .hero.hero-started .university-secondary { animation-delay: .90s; }
     .hero.hero-started .major { animation-delay: 1.04s; }
     .hero.hero-started .uni-badge { animation-delay: 1.18s; }
-    .hero.hero-started .just-logo {
-      animation-delay: 1.32s;
-    }
+    .hero.hero-started .just-logo { animation-delay: 1.32s; }
     .hero.hero-started .quote { animation-delay: 1.48s; }
-    .hero.hero-started .hero-envelope {
-      animation-delay: 1.64s;
+
+    /* Text shadows */
+    .hero-line, .bismillah, .quote, .father-invitation {
+      text-shadow: 0 1px 0 rgba(255,255,255,.92), 0 2px 10px rgba(255,250,246,.32);
     }
 
-    /* تقليل الزخرفة المتحركة مع إبقاء الجو حيًا */
-    .butterfly:nth-child(3),
-    .butterfly.extra-left,
-    .butterfly.super-center {
-      display: none;
+    /* Responsive */
+    @media (max-width: 700px) {
+      .hero { padding-top: 35px; }
+      .name-cap { top: -25px; right: -20px; }
+      .detail-grid { grid-template-columns: 1fr; }
+      .countdown { gap: 8px; }
+      .time-box { padding: 15px 7px; }
+      .actions { gap: 8px; }
+      .action-button { min-width: 135px; }
     }
 
-    .butterfly { opacity: .38; }
-    .petal { opacity: .30; }
+    @media (max-width: 640px) {
+      body { padding: 0 0 28px; }
+      .hero { width: 100%; min-height: 100vh; border-radius: 0; padding: 24px 10px 48px; background-position: center top; }
+      .hero::before, .invitation::before { inset: 9px; }
+      .hero-inner { width: min(100%, 360px); padding: 22px 10px 28px; background: rgba(255,250,246,.12); }
+      .invitation { margin-top: 14px; border-radius: 0; padding: 58px 12px 34px; }
+      .invitation .container { padding: 24px 12px 30px; }
+      .envelope { width: min(330px, calc(100vw - 58px)); }
+      .envelope-video {
+        mask-image: radial-gradient(ellipse 80% 75% at center, black 45%, transparent 90%);
+        -webkit-mask-image: radial-gradient(ellipse 80% 75% at center, black 45%, transparent 90%);
+        box-shadow: inset 0 0 60px 30px rgba(251, 242, 235, 0.55);
+      }
+      .open-invitation { width: calc(100% - 28px); bottom: 14px; padding: 10px 14px; font-size: .94rem; min-width: unset; }
+      .envelope-hint { margin-top: 13px; font-size: .86rem; }
+      .hero .quote { margin-top: 18px; font-size: 1.05rem; }
+      .loading-content { width: min(350px, calc(100vw - 28px)); padding: 24px 15px 22px; }
+      .music-button { bottom: 18px; left: 18px; }
+      .back-to-top { right: 18px; bottom: 18px; }
+    }
 
-    /* iPad / tablet */
+    @media (max-width: 460px) {
+      .hero { padding-left: 15px; padding-right: 15px; }
+      .graduate-name { font-size: 2.5rem; }
+      .name-cap { font-size: 1.35rem; right: -25px; top: -30px; }
+      .university-main { font-size: 1rem; }
+      .actions { flex-direction: column; align-items: stretch; }
+      .action-button { width: 100%; }
+    }
+
     @media (min-width: 641px) and (max-width: 1099px) {
       body { padding: 20px 16px 40px; }
-      .hero,
-      .invitation {
-        width: min(900px, 100%);
-      }
-      .hero {
-        min-height: auto;
-        padding: 52px 26px 68px;
-      }
-      .hero-inner {
-        width: min(720px, 100%);
-        padding: 38px 34px 42px;
-      }
-      .invitation {
-        padding: 76px 24px 48px;
-      }
-      .invitation .container {
-        padding: 40px 28px 42px;
-      }
-      .detail-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .graduate-detail {
-        grid-column: 1 / -1;
-      }
-      .envelope {
-        width: min(440px, 84vw);
-      }
+      .hero, .invitation { width: min(900px, 100%); }
+      .hero { min-height: auto; padding: 52px 26px 68px; }
+      .hero-inner { width: min(720px, 100%); padding: 38px 34px 42px; }
+      .invitation { padding: 76px 24px 48px; }
+      .invitation .container { padding: 40px 28px 42px; }
+      .detail-grid { grid-template-columns: repeat(3, 1fr); }
+      .graduate-detail { grid-column: 1 / -1; }
+      .envelope { width: min(440px, 84vw); }
     }
 
-    /* Laptop / desktop */
     @media (min-width: 1100px) {
       body { padding: 32px 28px 64px; }
-      .hero {
-        min-height: auto;
-        padding: 72px 40px 86px;
-      }
-      .hero-inner {
-        width: min(760px, 100%);
-        padding: 46px 48px 50px;
-      }
-      .invitation {
-        padding: 100px 44px 72px;
-      }
-      .invitation .container {
-        width: min(1040px, 100%);
-        padding: 52px 50px 56px;
-      }
-      .detail-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-      }
-      .graduate-detail {
-        grid-column: 1 / -1;
-      }
-      .countdown,
-      .welcome-text {
-        max-width: 820px;
-      }
-      .envelope {
-        width: min(470px, 70vw);
-      }
-      .actions {
-        max-width: 1040px;
+      .hero { min-height: auto; padding: 72px 40px 86px; }
+      .hero-inner { width: min(760px, 100%); padding: 46px 48px 50px; }
+      .invitation { padding: 100px 44px 72px; }
+      .invitation .container { width: min(1040px, 100%); padding: 52px 50px 56px; }
+      .detail-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .graduate-detail { grid-column: 1 / -1; }
+      .countdown, .welcome-text { max-width: 820px; }
+      .envelope { width: min(470px, 70vw); }
+      .actions { max-width: 1040px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
       }
     }
-
-    @media (max-width: 640px) {
-      .envelope {
-        width: min(330px, calc(100vw - 58px));
-        height: auto;
-        aspect-ratio: 3 / 2;
-      }
-      .loading-content {
-        width: min(350px, calc(100vw - 28px));
-        padding: 24px 15px 22px;
-      }
-    }
-
-
-
-    .just-logo {
-      width: auto;
-      height: auto;
-      min-width: 160px;
-      margin-top: 14px;
-      padding: 7px 18px 8px;
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1px;
-      border: 1px solid rgba(199,163,106,.38);
-      border-radius: 4px;
-      background: rgba(255,250,246,.58);
-      color: var(--brown);
-      filter: none;
-      box-shadow: 0 5px 14px rgba(109,81,75,.08);
-    }
-
-    .just-logo strong {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.35rem;
-      letter-spacing: 3px;
-      line-height: 1;
-    }
-
-    .just-logo span {
-      font-family: "Cormorant Garamond", serif;
-      font-size: .55rem;
-      letter-spacing: .35px;
-      color: var(--brown-light);
-      direction: ltr;
-      white-space: nowrap;
-    }
-
-
-
-    /* =========================================================
-       ENVELOPE PAPER REVEAL + LOADING ALIGNMENT
-    ========================================================= */
-
-    /* استعادة الشعار الأصلي بدل الشعار النصي */
-    img.just-logo {
-      width: 72px;
-      height: 72px;
-      min-width: 0;
-      margin-top: 14px;
-      padding: 0;
-      display: block;
-      border: 0;
-      border-radius: 0;
-      background: transparent;
-      box-shadow: none;
-      object-fit: contain;
-      filter: drop-shadow(0 5px 12px rgba(109,81,75,.12));
-    }
-
-    /* صندوق الموسيقى في شاشة البداية: تمركز صريح على كل الأجهزة */
-    .loading-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .loading-music-prompt {
-      width: min(330px, 100%);
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      direction: rtl;
-    }
-
-    .loading-music-text {
-      width: 100%;
-      text-align: center;
-    }
-
-    .loading-music-actions {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-
-
-
-    /* =========================================================
-       TRUE ENVELOPE OPENING
-       The flap rotates, the seal lifts, and the invitation paper
-       slides out from inside the envelope.
-    ========================================================= */
-
-    .envelope {
-      overflow: hidden;
-      perspective: 1000px;
-      background:
-        linear-gradient(145deg, rgba(255,255,255,.28), transparent 52%),
-        linear-gradient(145deg, #f0cfd0 0%, #dfaeb3 100%);
-      border: 1px solid rgba(164,112,105,.30);
-      box-shadow:
-        0 26px 46px rgba(109,81,75,.28),
-        0 1px 0 rgba(255,255,255,.9) inset;
-    }
-
-    .envelope::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      z-index: 10;
-      opacity: .16;
-      background-image: radial-gradient(rgba(109,81,75,.22) .55px, transparent .7px);
-      background-size: 5px 5px;
-      mix-blend-mode: multiply;
-    }
-
-    .open-invitation {
-      z-index: 12;
-    }
-
-    .envelope.open .open-invitation {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-
-
-    /* =========================================================
-       REAL ENVELOPE OPENING VIDEO
-    ========================================================= */
-    .envelope {
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      background: #eee3da;
-    }
-
-    .envelope-video {
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      background: #eee3da;
-    }
-
-    .envelope.video-playing .open-invitation {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .envelope-video::-webkit-media-controls {
-      display: none !important;
-    }
-
-    @media (max-width: 640px) {
-      .envelope {
-        width: min(330px, calc(100vw - 58px));
-        aspect-ratio: 16 / 9;
-      }
-    }
-
   </style>
 </head>
 
-
 <body>
-
-  <!-- =======================================================
-       LOADING SCREEN
-  ======================================================== -->
-
+  <!-- LOADING SCREEN -->
   <div class="loading-screen" id="loadingScreen">
-
-  <div class="loading-content">
-
-    <div class="loading-cap">
-      🎓
-    </div>
-
-    <div class="loading-name">
-      Lujain
-    </div>
-
-    <div class="loading-line"></div>
-
-    <div class="loading-text">
-      لحظة جميلة تستحق الانتظار...
-    </div>
-
-
-    <!-- MUSIC PROMPT -->
-
-    <div class="loading-music-prompt" id="loadingMusicPrompt">
-
-      <div class="loading-music-text">
-        🎵 أتحب إضافة موسيقى للجو؟
+    <div class="loading-content">
+      <div class="loading-cap">🎓</div>
+      <div class="loading-name">Lujain</div>
+      <div class="loading-line"></div>
+      <div class="loading-text">لحظة جميلة تستحق الانتظار...</div>
+      <div class="loading-music-prompt" id="loadingMusicPrompt">
+        <div class="loading-music-text">🎵 أتحب إضافة موسيقى للجو؟</div>
+        <div class="loading-music-actions">
+          <button class="loading-music-choice yes" id="loadingMusicYes" type="button">نعم 🎵</button>
+          <button class="loading-music-choice" id="loadingMusicNo" type="button">لا</button>
+        </div>
       </div>
-
-      <div class="loading-music-actions">
-
-        <button
-          class="loading-music-choice yes"
-          id="loadingMusicYes"
-          type="button"
-        >
-          نعم 🎵
-        </button>
-
-        <button
-          class="loading-music-choice"
-          id="loadingMusicNo"
-          type="button"
-        >
-          لا
-        </button>
-
-      </div>
-
     </div>
-
   </div>
 
-</div>
-  <!-- =======================================================
-       BACKGROUND DECORATION
-  ======================================================== -->
-
+  <!-- BACKGROUND -->
   <div class="glow glow-1"></div>
   <div class="glow glow-2"></div>
-
   <div class="petals" id="petals"></div>
-
   <div class="butterflies">
-
-    <div class="butterfly">
-      🦋
-    </div>
-
-    <div class="butterfly">
-      🦋
-    </div>
-
-    <div class="butterfly">
-      🦋
-    </div>
-
-    <!-- فراشة عادية - يسار -->
-    <div class="butterfly extra-left">
-      🦋
-    </div>
-
-    <!-- فراشة متحركة أكثر - وسط -->
-    <div class="butterfly super-center">
-      🦋
-    </div>
-
+    <div class="butterfly">🦋</div>
+    <div class="butterfly">🦋</div>
+    <div class="butterfly">🦋</div>
+    <div class="butterfly extra-left">🦋</div>
+    <div class="butterfly super-center">🦋</div>
   </div>
 
-
-  <!-- =======================================================
-     HERO - الصفحة الأولى
-======================================================== -->
-
-<header class="hero">
-
-  <div class="hero-inner">
-
-
-    <!-- السطر 1: البسملة -->
-
-    <div class="hero-line hero-bismillah">
-      بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
-    </div>
-
-
-    <!-- السطر 2: يتشرف -->
-
-    <div class="hero-line hero-honor">
-      يتشرف
-    </div>
-
-
-    <!-- السطر 3: اسم الوالد -->
-
-    <div class="hero-line hero-father-name">
-      سلامة فليح الخوالدة (أبو نشأت)
-    </div>
-
-
-    <!-- السطر 4: الدعوة -->
-
-    <div class="hero-line hero-invitation-text">
-      بدعوتكم لمشاركة فرحة تخرج ابنته
-    </div>
-
-
-    <!-- السطر 5: اسم الخريجة -->
-
-    <div class="graduate-name-wrapper hero-line hero-graduate">
-
-      <div class="graduate-name">
-        لُــجــيــن
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-line hero-bismillah">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</div>
+      <div class="hero-line hero-honor">يتشرف</div>
+      <div class="hero-line hero-father-name">سلامة فليح الخوالدة (أبو نشأت)</div>
+      <div class="hero-line hero-invitation-text">بدعوتكم لمشاركة فرحة تخرج ابنته</div>
+      <div class="graduate-name-wrapper hero-line hero-graduate">
+        <div class="graduate-name">لُــجــيــن</div>
+        <div class="name-cap">🎓</div>
       </div>
+      <div class="hero-line university-main">من جامعة العلوم والتكنولوجيا الأردنية</div>
+      <div class="hero-line university-secondary">كلية العلوم الطبية التطبيقية</div>
+      <div class="hero-line major">تخصص العلوم الطبية المخبرية</div>
+      <div class="hero-line uni-badge">👩🏻‍🔬🔬 𝑱𝑼𝑺𝑻 𝑼𝑵𝑰 | 𝑴𝑳𝑺</div>
+      <img src="just-logo.png" alt="JUST" class="just-logo hero-line">
+      <div class="hero-line quote">سَنَوَاتُ جَهْدٍ وَمُثَابَرَةٍ تُوِّجَتْ بِالتَّخَرُّجِ</div>
 
-      <div class="name-cap">
-        🎓
-      </div>
-
-    </div>
-
-
-    <!-- السطر 6: الجامعة -->
-
-    <div class="hero-line university-main">
-      من جامعة العلوم والتكنولوجيا الأردنية
-    </div>
-
-
-    <!-- السطر 7: الكلية -->
-
-    <div class="hero-line university-secondary">
-      كلية العلوم الطبية التطبيقية
-    </div>
-
-
-    <!-- السطر 8: التخصص -->
-
-    <div class="hero-line major">
-      تخصص العلوم الطبية المخبرية
-    </div>
-
-
-    <!-- السطر 9: JUST UNI | MLS -->
-
-    <div class="hero-line uni-badge">
-      👩🏻‍🔬🔬 𝑱𝑼𝑺𝑻 𝑼𝑵𝑰 | 𝑴𝑳𝑺
-    </div>
-
-
-    <!-- السطر 10: شعار الجامعة -->
-
-    <img
-      src="just-logo.png"
-      alt="JUST"
-      class="just-logo hero-line"
-    >
-
-
-    <!-- السطر 11: العبارة -->
-
-    <div class="hero-line quote">
-      سَنَوَاتُ جَهْدٍ وَمُثَابَرَةٍ تُوِّجَتْ بِالتَّخَرُّجِ
-    </div>
-
-
-    <!-- الظرف -->
-
-    <div class="envelope-section hero-envelope">
-
-      <div class="envelope" id="envelope">
-
-        <video
-          class="envelope-video"
-          id="envelopeVideo"
-          preload="metadata"
-          playsinline
-          muted
-          aria-label="فيديو فتح الظرف"
-        >
-          <source src="envelope-opening-site.mp4" type="video/mp4">
-        </video>
-
-        <button
-          class="open-invitation"
-          id="openInvitationButton"
-          onclick="openInvitation()"
-        >
-          اضغطوا لفتح الدعوة
-        </button>
-
-      </div>
-
-      <div class="envelope-hint">
-        افتحوا الظرف لتبدأ الحكاية ✨
-      </div>
-
-    </div>
-
-
-  </div>
-
-</header>
-
-
-  <!-- =======================================================
-       MAIN INVITATION
-  ======================================================== -->
-
-  <main
-    class="invitation"
-    id="invitation"
-  >
-
-    <div class="container">
-
-
-      <!-- Welcome -->
-
-      <section class="section-heading reveal reveal-up">
-
-        <div class="small-heading">
-          𝑨 𝑺𝑷𝑬𝑪𝑰𝑨𝑳 𝑫𝑨𝒀
+      <div class="envelope-section hero-envelope">
+        <div class="envelope" id="envelope">
+          <video class="envelope-video" id="envelopeVideo" preload="metadata" playsinline muted aria-label="فيديو فتح الظرف">
+            <source src="envelope-opening-site.mp4" type="video/mp4">
+          </video>
+          <button class="open-invitation" id="openInvitationButton" onclick="openInvitation()">اضغطوا لفتح الدعوة</button>
         </div>
+        <div class="envelope-hint">افتحوا الظرف لتبدأ الحكاية ✨</div>
+      </div>
+    </div>
+  </header>
 
-        <h1 class="main-heading">
-          أهلاً وسهلاً بكم 🤍
-        </h1>
-
+  <!-- INVITATION -->
+  <main class="invitation" id="invitation">
+    <div class="container">
+      <section class="section-heading reveal reveal-up">
+        <div class="small-heading">𝑨 𝑺𝑷𝑬𝑪𝑰𝑨𝑳 𝑫𝑨𝒀</div>
+        <h1 class="main-heading">أهلاً وسهلاً بكم 🤍</h1>
         <div class="heading-line"></div>
-
       </section>
-
 
       <p class="welcome-text reveal reveal-up">
-
-        يسعدنا حضوركم ومشاركتكم أجمل لحظاتنا،
-        <br>
-
+        يسعدنا حضوركم ومشاركتكم أجمل لحظاتنا،<br>
         فوجودكم يجعل هذه الذكرى أجمل وأقرب إلى القلب.
-
       </p>
 
-
-      <!-- ===================================================
-           COUNTDOWN
-      ==================================================== -->
-
       <section class="countdown-wrapper reveal reveal-scale">
-
-        <div
-          class="countdown"
-          id="countdown"
-        >
-
-          <div class="time-box">
-
-            <span
-              class="time-number"
-              id="days"
-            >
-              0
-            </span>
-
-            <span class="time-label">
-              يوم
-            </span>
-
-          </div>
-
-
-          <div class="time-box">
-
-            <span
-              class="time-number"
-              id="hours"
-            >
-              0
-            </span>
-
-            <span class="time-label">
-              ساعة
-            </span>
-
-          </div>
-
-
-          <div class="time-box">
-
-            <span
-              class="time-number"
-              id="minutes"
-            >
-              0
-            </span>
-
-            <span class="time-label">
-              دقيقة
-            </span>
-
-          </div>
-
-
-          <div class="time-box">
-
-            <span
-              class="time-number"
-              id="seconds"
-            >
-              0
-            </span>
-
-            <span class="time-label">
-              ثانية
-            </span>
-
-          </div>
-
+        <div class="countdown" id="countdown">
+          <div class="time-box"><span class="time-number" id="days">0</span><span class="time-label">يوم</span></div>
+          <div class="time-box"><span class="time-number" id="hours">0</span><span class="time-label">ساعة</span></div>
+          <div class="time-box"><span class="time-number" id="minutes">0</span><span class="time-label">دقيقة</span></div>
+          <div class="time-box"><span class="time-number" id="seconds">0</span><span class="time-label">ثانية</span></div>
         </div>
-
-
-        <!-- After Event -->
-
-        <div
-          class="after-event"
-          id="afterEvent"
-        >
-
-          <div class="after-event-cap">
-            🎓
-          </div>
-
-          <div class="after-event-title">
-            اليوم الذي انتظرناه وصل
-          </div>
-
-          <div class="after-event-text">
-            مبارك التخرج يا قُرة العين (لُـجـيـن) 🤍<br>
-            ومنها للأعلى دائمًا
-          </div>
-
+        <div class="after-event" id="afterEvent">
+          <div class="after-event-cap">🎓</div>
+          <div class="after-event-title">اليوم الذي انتظرناه وصل</div>
+          <div class="after-event-text">مبارك التخرج يا قُرة العين (لُـجـيـن) 🤍<br>ومنها للأعلى دائمًا</div>
         </div>
-
       </section>
 
-
-      <!-- ===================================================
-           DETAILS
-      ==================================================== -->
-
       <section class="details-card reveal">
-
         <div class="section-heading">
-
-          <div class="small-heading">
-            𝑻𝑯𝑬 𝑫𝑬𝑻𝑨𝑰𝑳𝑺
-          </div>
-
-          <h2 class="main-heading">
-            تفاصيل المناسبة
-          </h2>
-
+          <div class="small-heading">𝑻𝑯𝑬 𝑫𝑬𝑻𝑨𝑰𝑳𝑺</div>
+          <h2 class="main-heading">تفاصيل المناسبة</h2>
           <div class="heading-line"></div>
-
         </div>
-
-
         <div class="detail-grid">
-
-
           <div class="detail-item reveal reveal-up">
-
-            <div class="detail-icon">
-              📍
-            </div>
-
-            <span class="detail-label">
-              المكان
-            </span>
-
-            <div class="detail-value">
-              منزل والد لُـجـيـن (أبو نشأت)
-            </div>
-
+            <div class="detail-icon">📍</div>
+            <span class="detail-label">المكان</span>
+            <div class="detail-value">منزل والد لُـجـيـن (أبو نشأت)</div>
           </div>
-
-
           <div class="detail-item reveal reveal-up">
-
-            <div class="detail-icon">
-              📅
-            </div>
-
-            <span class="detail-label">
-              التاريخ
-            </span>
-
-            <div class="detail-value">
-              الثلاثاء 26 حزيران 2029
-            </div>
-
+            <div class="detail-icon">📅</div>
+            <span class="detail-label">التاريخ</span>
+            <div class="detail-value">الثلاثاء 26 حزيران 2029</div>
           </div>
-
-
           <div class="detail-item reveal reveal-up">
-
-            <div class="detail-icon">
-              🕖
-            </div>
-
-            <span class="detail-label">
-              الوقت
-            </span>
-
-            <div class="detail-value">
-              الساعة 7:00 مساءً
-            </div>
-
+            <div class="detail-icon">🕖</div>
+            <span class="detail-label">الوقت</span>
+            <div class="detail-value">الساعة 7:00 مساءً</div>
           </div>
-
-
           <div class="detail-item graduate-detail reveal reveal-scale">
-
             <div class="graduate-message">
               <span class="graduate-message-title">💌 رسالة من الخريجة لُـجـيـن</span>
               <span class="graduate-message-subtitle">للضيوف الكرام</span>
-              <p>
-                حضوركم ومشاركتكم فرحتي بالتخرج
-                <br>
-                هي أجمل هدية يمكن أن أحصل عليها في هذا اليوم 🤍
-              </p>
+              <p>حضوركم ومشاركتكم فرحتي بالتخرج<br>هي أجمل هدية يمكن أن أحصل عليها في هذا اليوم 🤍</p>
             </div>
-
           </div>
-
-
         </div>
-
-
       </section>
-
-
     </div>
-    <!-- نهاية container -->
-
-
-    <!-- ===================================================
-         ACTION BUTTONS
-    ==================================================== -->
 
     <div class="actions reveal reveal-up">
-
-      <button
-        class="action-button primary reveal reveal-up"
-        onclick="openMap()"
-      >
-        📍 فتح الموقع على الخريطة
-      </button>
-
-
-
-
-      <button
-        class="action-button reveal reveal-up"
-        onclick="openMessageModal()"
-      >
-        💌 اتركوا تهنئتكم
-      </button>
-
+      <button class="action-button primary reveal reveal-up" onclick="openMap()">📍 فتح الموقع على الخريطة</button>
+      <button class="action-button reveal reveal-up" onclick="openMessageModal()">💌 اتركوا تهنئتكم</button>
     </div>
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
 
     <footer class="reveal reveal-up">
-
-      <div class="footer-cap">
-        🎓
-      </div>
-
-      <div class="footer-message reveal reveal-up">
-
-        بكل حب...
-
-        <br>
-
-        ننتظركم لمشاركة هذه اللحظة الجميلة 🤍
-
-      </div>
-
-      <div class="footer-name reveal reveal-scale">
-
-        𝓛𝓾𝓳𝓪𝓲𝓷 𝓢𝓪𝓵𝓪𝓶𝓮𝓱 𝓚𝓗
-      </div>
-
-      <div class="footer-class reveal reveal-up">
-
-        🎓🥼 𝑪𝒍𝒂𝒔𝒔 𝑶𝑭 <strong>2029</strong>
-      </div>
-
+      <div class="footer-cap">🎓</div>
+      <div class="footer-message reveal reveal-up">بكل حب...<br>ننتظركم لمشاركة هذه اللحظة الجميلة 🤍</div>
+      <div class="footer-name reveal reveal-scale">𝓛𝓾𝓳𝓪𝓲𝓷 𝓢𝓪𝓵𝓪𝓶𝓮𝓱 𝓚𝓗</div>
+      <div class="footer-class reveal reveal-up">🎓🥼 𝑪𝒍𝒂𝒔𝒔 𝑶𝑭 <strong>2029</strong></div>
     </footer>
-
   </main>
 
+  <!-- BUTTONS -->
+  <button class="music-button" id="musicButton" onclick="toggleMusic()" aria-label="تشغيل الموسيقى">🎵</button>
+  <button class="back-to-top" id="backToTop" type="button" onclick="scrollToTop()" aria-label="العودة إلى أعلى الصفحة" title="العودة إلى الأعلى">↑</button>
 
-
-  <!-- =======================================================
-       MUSIC BUTTON
-  ======================================================== -->
-
-  <button
-    class="music-button"
-    id="musicButton"
-    onclick="toggleMusic()"
-    aria-label="تشغيل الموسيقى"
-  >
-    🎵
-  </button>
-
-
-  <button
-    class="back-to-top"
-    id="backToTop"
-    type="button"
-    onclick="scrollToTop()"
-    aria-label="العودة إلى أعلى الصفحة"
-    title="العودة إلى الأعلى"
-  >
-    ↑
-  </button>
-
-
-  <!-- =======================================================
-       MESSAGE MODAL
-  ======================================================== -->
-
-  <div
-    class="modal"
-    id="messageModal"
-  >
-
+  <!-- MODAL -->
+  <div class="modal" id="messageModal">
     <div class="modal-card">
-
-      <button
-        class="modal-close"
-        onclick="closeMessageModal()"
-        aria-label="إغلاق"
-      >
-        ✕
-      </button>
-
-
-      <h2 class="modal-title">
-        💌 اتركوا تهنئتكم
-      </h2>
-
-      <p class="modal-subtitle">
-        تهنئتكم ستبقى ذكرى جميلة من هذا اليوم 🤍
-      </p>
-
-
-      <form
-        class="message-form"
-        id="messageForm"
-      >
-
+      <button class="modal-close" onclick="closeMessageModal()" aria-label="إغلاق">✕</button>
+      <h2 class="modal-title">💌 اتركوا تهنئتكم</h2>
+      <p class="modal-subtitle">تهنئتكم ستبقى ذكرى جميلة من هذا اليوم 🤍</p>
+      <form class="message-form" id="messageForm">
         <div class="form-group">
-
-          <label
-            class="form-label"
-            for="guestName"
-          >
-            الاسم
-          </label>
-
-          <input
-            class="form-input"
-            id="guestName"
-            type="text"
-            placeholder="اكتب اسمك"
-            required
-          >
-
+          <label class="form-label" for="guestName">الاسم</label>
+          <input class="form-input" id="guestName" type="text" placeholder="اكتب اسمك" required>
         </div>
-
-
         <div class="form-group">
-
-          <label
-            class="form-label"
-            for="guestMessage"
-          >
-            الرسالة
-          </label>
-
-          <textarea
-            class="form-textarea"
-            id="guestMessage"
-            placeholder="اكتب تهنئتك هنا..."
-            maxlength="600"
-            required
-          ></textarea>
-
+          <label class="form-label" for="guestMessage">الرسالة</label>
+          <textarea class="form-textarea" id="guestMessage" placeholder="اكتب تهنئتك هنا..." maxlength="600" required></textarea>
         </div>
-
-
-        <button
-          class="send-message"
-          type="submit"
-        >
-          إرسال الرسالة 🤍
-        </button>
-
-        <div
-          class="form-status"
-          id="formStatus"
-        ></div>
-
+        <button class="send-message" type="submit">إرسال الرسالة 🤍</button>
+        <div class="form-status" id="formStatus"></div>
       </form>
-
     </div>
-
   </div>
 
-
-  <!-- =======================================================
-       AUDIO
-  ======================================================== -->
-
-  <audio id="envelopeSound" preload="auto">
-    <source src="paper-open.mp3" type="audio/mpeg">
-  </audio>
-
-
-  <!-- الموسيقى الحقيقية -->
-  <audio
-    id="realAudio"
-    loop
-    preload="auto"
-  >
-
-    <source
-      src="graduation-music.mp3"
-      type="audio/mpeg"
-    >
-
-  </audio>
-
-
-  <!-- =======================================================
-       JAVASCRIPT
-  ======================================================== -->
+  <!-- AUDIO -->
+  <audio id="envelopeSound" preload="auto"><source src="paper-open.mp3" type="audio/mpeg"></audio>
+  <audio id="realAudio" loop preload="auto"><source src="graduation-music.mp3" type="audio/mpeg"></audio>
 
   <script>
+    const EVENT_DATE = new Date("2029-06-26T19:00:00+03:00");
+    const MAP_URL = "https://goo.gl/maps/pumVhLv9WJbjwHjP6?g_st=ac";
 
-    /* =======================================================
-       SETTINGS
-    ======================================================== */
+    function decodeKey(parts) { return parts.join(""); }
+    const EMAILJS_PUBLIC_KEY = decodeKey(["G-Egpem7", "SDQYMfyxQ"]);
+    const EMAILJS_SERVICE_ID = decodeKey(["service_l8", "ey4wq"]);
+    const EMAILJS_TEMPLATE_ID = decodeKey(["template_mq", "37ndm"]);
+    const MESSAGE_RECEIVER = "j68954809@gmail.com";
 
-    const EVENT_DATE =
-      new Date(
-        "2029-06-26T19:00:00+03:00"
-      );
+    window.addEventListener("load", () => {
+      const loadingScreen = document.getElementById("loadingScreen");
+      const musicYes = document.getElementById("loadingMusicYes");
+      const musicNo = document.getElementById("loadingMusicNo");
+      if (!loadingScreen) return;
+      let musicChoiceMade = false;
 
-    const MAP_URL =
-      "https://goo.gl/maps/pumVhLv9WJbjwHjP6?g_st=ac";
-
-
-    /* =======================================================
-       EMAILJS
-    ======================================================== */
-
-    function decodeKey(parts) {
-      return parts.join("");
-    }
-
-    const EMAILJS_PUBLIC_KEY =
-      decodeKey([
-        "G-Egpem7",
-        "SDQYMfyxQ"
-      ]);
-
-    const EMAILJS_SERVICE_ID =
-      decodeKey([
-        "service_l8",
-        "ey4wq"
-      ]);
-
-    const EMAILJS_TEMPLATE_ID =
-      decodeKey([
-        "template_mq",
-        "37ndm"
-      ]);
-
-    const MESSAGE_RECEIVER =
-      "j68954809@gmail.com";
-
-
-   /* =======================================================
-   LOADING + MUSIC CHOICE
-======================================================= */
-
-window.addEventListener(
-  "load",
-  () => {
-
-    const loadingScreen =
-      document.getElementById(
-        "loadingScreen"
-      );
-
-    const musicYes =
-      document.getElementById(
-        "loadingMusicYes"
-      );
-
-    const musicNo =
-      document.getElementById(
-        "loadingMusicNo"
-      );
-
-
-    if (!loadingScreen) return;
-
-
-    let musicChoiceMade = false;
-
-
-    function finishLoading() {
-
-  if (musicChoiceMade) return;
-
-  musicChoiceMade = true;
-
-  loadingScreen.classList.add("hide");
-
-  /* تبدأ أنيميشن الصفحة الأولى بعد انتهاء الـLoading */
-
-  setTimeout(() => {
-
-    const hero = document.querySelector(".hero");
-
-    if (hero) {
-      hero.classList.add("hero-started");
-    }
-
-  }, 350);
-
-}
-
-  
-
-
-    /* =========================
-       YES - تشغيل الموسيقى
-    ========================= */
-
-    if (musicYes) {
-
-      musicYes.addEventListener(
-        "click",
-        () => {
-
-          startMusic().finally(() => {
-            finishLoading();
-          });
-
-        }
-      );
-
-    }
-
-
-    /* =========================
-       NO - بدون موسيقى
-    ========================= */
-
-    if (musicNo) {
-
-      musicNo.addEventListener(
-        "click",
-        () => {
-
-          stopMusic();
-
-          finishLoading();
-
-        }
-      );
-
-    }
-
-  }
-);
-    /* =======================================================
-       PETALS
-    ======================================================== */
-
-    function createPetals() {
-
-      const container =
-        document.getElementById(
-          "petals"
-        );
-
-      if (!container) return;
-
-      const totalPetals = 14;
-
-      for (
-        let i = 0;
-        i < totalPetals;
-        i++
-      ) {
-
-        const petal =
-          document.createElement(
-            "span"
-          );
-
-        petal.className =
-          "petal";
-
-        petal.style.left =
-          Math.random() * 100 + "%";
-
-        petal.style.animationDuration =
-          (12 + Math.random() * 8) + "s";
-
-        petal.style.animationDelay =
-          (-Math.random() * 15) + "s";
-
-        petal.style.opacity =
-          0.25 +
-          Math.random() * 0.35;
-
-        petal.style.transform =
-          `scale(${0.65 + Math.random() * 0.6})`;
-
-        container.appendChild(
-          petal
-        );
-
+      function finishLoading() {
+        if (musicChoiceMade) return;
+        musicChoiceMade = true;
+        loadingScreen.classList.add("hide");
+        setTimeout(() => {
+          const hero = document.querySelector(".hero");
+          if (hero) hero.classList.add("hero-started");
+        }, 350);
       }
 
-    }
+      if (musicYes) musicYes.addEventListener("click", () => { startMusic().finally(() => finishLoading()); });
+      if (musicNo) musicNo.addEventListener("click", () => { stopMusic(); finishLoading(); });
+    });
 
+    function createPetals() {
+      const container = document.getElementById("petals");
+      if (!container) return;
+      for (let i = 0; i < 14; i++) {
+        const petal = document.createElement("span");
+        petal.className = "petal";
+        petal.style.left = Math.random() * 100 + "%";
+        petal.style.animationDuration = (12 + Math.random() * 8) + "s";
+        petal.style.animationDelay = (-Math.random() * 15) + "s";
+        petal.style.opacity = 0.25 + Math.random() * 0.35;
+        petal.style.transform = `scale(${0.65 + Math.random() * 0.6})`;
+        container.appendChild(petal);
+      }
+    }
     createPetals();
 
-
-    /* =======================================================
-       OPEN INVITATION
-    ======================================================== */
-
     function openInvitation() {
-
       const envelope = document.getElementById("envelope");
       const button = document.getElementById("openInvitationButton");
       const video = document.getElementById("envelopeVideo");
       const invitation = document.getElementById("invitation");
-
       if (!envelope || !button || !video || !invitation) return;
       if (envelope.classList.contains("video-playing")) return;
-
       envelope.classList.add("video-playing");
       button.disabled = true;
       playEnvelopeSound();
       video.currentTime = 0;
-
       const revealInvitation = () => {
         invitation.classList.add("show");
         observeInvitationReveal();
-        setTimeout(() => {
-          invitation.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 450);
+        setTimeout(() => { invitation.scrollIntoView({ behavior: "smooth", block: "start" }); }, 450);
       };
-
       video.addEventListener("ended", revealInvitation, { once: true });
       video.addEventListener("error", revealInvitation, { once: true });
       video.play().catch(revealInvitation);
     }
 
-
-    /* =======================================================
-       ENVELOPE SOUND
-    ======================================================== */
-
     function playEnvelopeSound() {
-
-      const sound =
-        document.getElementById(
-          "envelopeSound"
-        );
-
+      const sound = document.getElementById("envelopeSound");
       if (!sound) return;
-
-      sound.currentTime = 0;
-      sound.volume = 1;
-
-      sound
-        .play()
-        .catch(() => {});
-
+      sound.currentTime = 0; sound.volume = 1;
+      sound.play().catch(() => {});
     }
 
-
-    /* =======================================================
-       MUSIC
-    ======================================================== */
-
-    const audio =
-      document.getElementById(
-        "realAudio"
-      );
-
-    const musicButton =
-      document.getElementById(
-        "musicButton"
-      );
-
+    const audio = document.getElementById("realAudio");
+    const musicButton = document.getElementById("musicButton");
     let musicPlaying = false;
 
-
     async function startMusic() {
-
       if (!audio) return;
-
       try {
-
-        audio.muted = false;
-        audio.volume = 0.3;
-
+        audio.muted = false; audio.volume = 0.3;
         await audio.play();
-
         musicPlaying = true;
-
-
-        if (musicButton) {
-
-          musicButton.classList.add(
-            "playing"
-          );
-
-          musicButton.textContent =
-            "🔊";
-
-        }
-
+        if (musicButton) { musicButton.classList.add("playing"); musicButton.textContent = "🔊"; }
       } catch (error) {
-
         musicPlaying = false;
-
-        if (musicButton) {
-          musicButton.textContent =
-            "🎵";
-        }
-
-        console.warn(
-          "Music could not start:",
-          error
-        );
-
+        if (musicButton) musicButton.textContent = "🎵";
+        console.warn("Music could not start:", error);
       }
-
     }
-
 
     function stopMusic() {
-
       if (!audio) return;
-
-      audio.pause();
-      audio.muted = false;
-      audio.volume = 0.3;
-
+      audio.pause(); audio.muted = false; audio.volume = 0.3;
       musicPlaying = false;
-
-      if (musicButton) {
-
-        musicButton.classList.remove(
-          "playing"
-        );
-
-        musicButton.textContent =
-          "🎵";
-
-      }
-
+      if (musicButton) { musicButton.classList.remove("playing"); musicButton.textContent = "🎵"; }
     }
 
+    function toggleMusic() { if (musicPlaying) stopMusic(); else startMusic(); }
 
-    function toggleMusic() {
-
-      if (musicPlaying) {
-        stopMusic();
-      } else {
-        startMusic();
-      }
-
-    }
-/* =======================================================
-   STOP MUSIC WHEN LEAVING THE BROWSER
-======================================================== */
-
-document.addEventListener(
-  "visibilitychange",
-  () => {
-
-    if (document.hidden) {
-
-      stopMusic();
-
-    }
-
-  }
-);
-
-window.addEventListener(
-  "pagehide",
-  () => {
-
-    stopMusic();
-
-  }
-);
-
-     /* =======================================================
-       COUNTDOWN
-    ======================================================== */
+    document.addEventListener("visibilitychange", () => { if (document.hidden) stopMusic(); });
+    window.addEventListener("pagehide", () => { stopMusic(); });
 
     function updateCountdown() {
-
-      const countdown =
-        document.getElementById(
-          "countdown"
-        );
-
-      const afterEvent =
-        document.getElementById(
-          "afterEvent"
-        );
-
-      if (!countdown || !afterEvent) {
-        return;
-      }
-
-
-      const now =
-        new Date();
-
-      const difference =
-        EVENT_DATE.getTime() -
-        now.getTime();
-
-
+      const countdown = document.getElementById("countdown");
+      const afterEvent = document.getElementById("afterEvent");
+      if (!countdown || !afterEvent) return;
+      const now = new Date();
+      const difference = EVENT_DATE.getTime() - now.getTime();
       if (difference <= 0) {
-
-        countdown.style.display =
-          "none";
-
-        afterEvent.classList.add(
-          "show"
-        );
-
+        countdown.style.display = "none";
+        afterEvent.classList.add("show");
         return;
-
       }
-
-
-      const days =
-        Math.floor(
-          difference /
-          (1000 * 60 * 60 * 24)
-        );
-
-
-      const hours =
-        Math.floor(
-          (
-            difference /
-            (1000 * 60 * 60)
-          ) % 24
-        );
-
-
-      const minutes =
-        Math.floor(
-          (
-            difference /
-            (1000 * 60)
-          ) % 60
-        );
-
-
-      const seconds =
-        Math.floor(
-          (
-            difference /
-            1000
-          ) % 60
-        );
-
-
-      document.getElementById(
-        "days"
-      ).textContent = days;
-
-
-      document.getElementById(
-        "hours"
-      ).textContent = hours;
-
-
-      document.getElementById(
-        "minutes"
-      ).textContent = minutes;
-
-
-      document.getElementById(
-        "seconds"
-      ).textContent = seconds;
-
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((difference / (1000 * 60)) % 60);
+      const seconds = Math.floor((difference / 1000) % 60);
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("seconds").textContent = seconds;
     }
-
-
     updateCountdown();
+    setInterval(updateCountdown, 1000);
 
-    setInterval(
-      updateCountdown,
-      1000
-    );
-
-
-    /* =======================================================
-       MAP
-    ======================================================== */
-
-    function openMap() {
-
-      window.open(
-        MAP_URL,
-        "_blank",
-        "noopener,noreferrer"
-      );
-
-    }
-
-
-    /* =======================================================
-       CALENDAR
-    ======================================================== */
-
-    /* =======================================================
-       BACK TO TOP
-    ======================================================== */
+    function openMap() { window.open(MAP_URL, "_blank", "noopener,noreferrer"); }
 
     const backToTop = document.getElementById("backToTop");
-
     window.addEventListener("scroll", () => {
       if (!backToTop) return;
       backToTop.classList.toggle("show", window.scrollY > 500);
     }, { passive: true });
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    /* =======================================================
-       SCROLL REVEAL - كل عنصر مستقل
-    ======================================================== */
+    function scrollToTop() { window.scrollTo({ top: 0, behavior: "smooth" }); }
 
     let revealObserver;
-
     if ("IntersectionObserver" in window) {
-
-      revealObserver = new IntersectionObserver(
-
-        (entries) => {
-
-          entries.forEach((entry) => {
-
-            if (entry.isIntersecting) {
-
-              entry.target.classList.add("visible");
-
-              // إلغاء المراقبة بعد التفعيل (مرة واحدة فقط)
-              revealObserver.unobserve(entry.target);
-
-            }
-
-          });
-
-        },
-
-        {
-          threshold: 0.1,
-          rootMargin: "0px 0px -50px 0px"
-        }
-
-      );
-
+      revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
     }
 
     function observeAllRevealElements() {
-
       const elements = document.querySelectorAll(".reveal");
-
       elements.forEach((element) => {
-
-        if (revealObserver) {
-
-          revealObserver.observe(element);
-
-        } else {
-
-          element.classList.add("visible");
-
-        }
-
+        if (revealObserver) revealObserver.observe(element);
+        else element.classList.add("visible");
       });
-
     }
-
-    // تشغيل عند فتح الصفحة
     observeAllRevealElements();
 
     function observeInvitationReveal() {
-
       const invitation = document.getElementById("invitation");
-
       if (!invitation) return;
-
       const elements = invitation.querySelectorAll(".reveal");
-
       elements.forEach((element) => {
-
-        if (revealObserver) {
-
-          revealObserver.observe(element);
-
-        } else {
-
-          element.classList.add("visible");
-
-        }
-
+        if (revealObserver) revealObserver.observe(element);
+        else element.classList.add("visible");
       });
-
     }
-
-
-    /* =======================================================
-       MESSAGE MODAL
-    ======================================================== */
 
     function openMessageModal() {
-
-      const modal =
-        document.getElementById(
-          "messageModal"
-        );
-
-      const nameInput =
-        document.getElementById(
-          "guestName"
-        );
-
-
+      const modal = document.getElementById("messageModal");
+      const nameInput = document.getElementById("guestName");
       if (!modal) return;
-
-
-      modal.classList.add(
-        "show"
-      );
-
-
-      setTimeout(
-        () => {
-
-          if (nameInput) {
-            nameInput.focus();
-          }
-
-        },
-        150
-      );
-
+      modal.classList.add("show");
+      setTimeout(() => { if (nameInput) nameInput.focus(); }, 150);
     }
-
 
     function closeMessageModal() {
-
-      const modal =
-        document.getElementById(
-          "messageModal"
-        );
-
+      const modal = document.getElementById("messageModal");
       if (!modal) return;
-
-      modal.classList.remove(
-        "show"
-      );
-
+      modal.classList.remove("show");
     }
 
-
-    const messageModal =
-      document.getElementById(
-        "messageModal"
-      );
-
-
+    const messageModal = document.getElementById("messageModal");
     if (messageModal) {
-
-      messageModal.addEventListener(
-        "click",
-        (event) => {
-
-          if (
-            event.target.id ===
-            "messageModal"
-          ) {
-
-            closeMessageModal();
-
-          }
-
-        }
-      );
-
+      messageModal.addEventListener("click", (event) => {
+        if (event.target.id === "messageModal") closeMessageModal();
+      });
     }
 
+    if (typeof emailjs !== "undefined") { emailjs.init(EMAILJS_PUBLIC_KEY); }
 
-    /* =======================================================
-       EMAILJS
-    ======================================================== */
-
-    if (
-      typeof emailjs !==
-      "undefined"
-    ) {
-
-      emailjs.init(
-        EMAILJS_PUBLIC_KEY
-      );
-
-    }
-
-
-    const messageForm =
-      document.getElementById(
-        "messageForm"
-      );
-
-
+    const messageForm = document.getElementById("messageForm");
     if (messageForm) {
-
-      messageForm.addEventListener(
-        "submit",
-        async (event) => {
-
-          event.preventDefault();
-
-
-          const name =
-            document
-              .getElementById(
-                "guestName"
-              )
-              .value
-              .trim();
-
-
-          const message =
-            document
-              .getElementById(
-                "guestMessage"
-              )
-              .value
-              .trim();
-
-
-          const status =
-            document.getElementById(
-              "formStatus"
-            );
-
-
-          if (!name || !message) {
-
-            status.textContent =
-              "اكتبوا الاسم والرسالة أولًا 🤍";
-
-            return;
-
-          }
-
-
-          status.textContent =
-            "جاري إرسال رسالتك... ✨";
-
-
-          if (
-            typeof emailjs ===
-            "undefined"
-          ) {
-
-            status.textContent =
-              "خدمة الرسائل غير متاحة حاليًا 🤍";
-
-            return;
-
-          }
-
-
-          try {
-
-            await emailjs.send(
-
-              EMAILJS_SERVICE_ID,
-
-              EMAILJS_TEMPLATE_ID,
-
-              {
-
-                from_name:
-                  name,
-
-                message:
-                  message,
-
-                to_email:
-                  MESSAGE_RECEIVER
-
-              }
-
-            );
-
-
-            status.textContent =
-              "وصلت تهنئتك وستبقى ذكرى جميلة 🤍✨";
-
-
-            messageForm.reset();
-
-
-            setTimeout(
-              () => {
-
-                closeMessageModal();
-
-                status.textContent =
-                  "";
-
-              },
-              1800
-            );
-
-
-          } catch (error) {
-
-            console.error(
-              "EmailJS error:",
-              error
-            );
-
-
-            status.textContent =
-              "هنالِك مُشكلة بالإِرسال، حَاول مرةً أخرَى 🤍";
-
-          }
-
+      messageForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const name = document.getElementById("guestName").value.trim();
+        const message = document.getElementById("guestMessage").value.trim();
+        const status = document.getElementById("formStatus");
+        if (!name || !message) { status.textContent = "اكتبوا الاسم والرسالة أولًا 🤍"; return; }
+        status.textContent = "جاري إرسال رسالتك... ✨";
+        if (typeof emailjs === "undefined") { status.textContent = "خدمة الرسائل غير متاحة حاليًا 🤍"; return; }
+        try {
+          await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+            from_name: name, message: message, to_email: MESSAGE_RECEIVER
+          });
+          status.textContent = "وصلت تهنئتك وستبقى ذكرى جميلة 🤍✨";
+          messageForm.reset();
+          setTimeout(() => { closeMessageModal(); status.textContent = ""; }, 1800);
+        } catch (error) {
+          console.error("EmailJS error:", error);
+          status.textContent = "هنالِك مُشكلة بالإِرسال، حَاول مرةً أخرَى 🤍";
         }
-      );
-
+      });
     }
 
-
-    /* =======================================================
-       ESC CLOSE MODAL
-    ======================================================== */
-
-    document.addEventListener(
-      "keydown",
-      (event) => {
-
-        if (
-          event.key ===
-          "Escape"
-        ) {
-
-          closeMessageModal();
-
-        }
-
-      }
-    );
-
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeMessageModal();
+    });
   </script>
-
 </body>
 </html>
-    
